@@ -1,0 +1,40 @@
+{
+  "title": "Where Export Controls Bind: Law and Lead in the Semiconductor Supply Chain, 2018–2026 — replication package",
+  "upload_type": "dataset",
+  "description": "Replication package for Kyung and Kim (2026), \"Where Export Controls Bind: Law and Lead in the Semiconductor Supply Chain, 2018–2026\" (KIET working paper). Contents: manuscript (Markdown, LaTeX source and generator, typeset PDF, HTML); one script per figure with PNG/PDF/CSV outputs and all processed inputs; analysis code (synthetic difference-in-differences, ridge-augmented synthetic control, 112-specification curve, conformal and permutation tests, three-source trade-ladder tests with Romano–Wolf correction, HS8 shape tests); processed panels built from public filings (SEC EDGAR, EDINET, OpenDART, cninfo, SSE), Huawei and ZTE annual reports, YMTC and CXMT prospectuses, GACC customs HS8 imports by origin, BACI and UN Comtrade bilateral trade; and the canonical registry tracing every number in the paper to its source and status. See README.md and REPRODUCE.md. The public source documents behind the processed panels are a separate Zenodo record (DOI 10.5281/zenodo.23638441). Code: MIT. Processed data and figures: CC BY 4.0.",
+  "creators": [
+    {
+      "name": "Kyung, Heekwon",
+      "affiliation": "Korea Institute for Industrial Economics and Trade (KIET)",
+      "orcid": "0009-0006-9916-2676"
+    },
+    {
+      "name": "Kim, Sanghoon",
+      "affiliation": "Korea Institute for Industrial Economics and Trade (KIET)"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "export controls",
+    "economic statecraft",
+    "weaponized interdependence",
+    "semiconductors",
+    "China",
+    "global value chains",
+    "synthetic difference-in-differences",
+    "replication"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23638441",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://github.com/hee880718/wecb-disclosures",
+      "relation": "references",
+      "resource_type": "dataset"
+    }
+  ],
+  "language": "eng"
+}
