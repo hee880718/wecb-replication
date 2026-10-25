@@ -31,9 +31,15 @@
         "identifier": "https://github.com/hee880718/wecb-replication",
         "relation": "isSupplementTo",
         "resource_type": "software"
+      },
+      {
+        "identifier": "10.5281/zenodo.23636445",
+        "relation": "isVersionOf",
+        "resource_type": "dataset"
       }
     ],
     "language": "eng",
-    "version": "1.0"
+    "version": "1.0",
+    "doi": "10.5281/zenodo.23636446"
   }
 }
