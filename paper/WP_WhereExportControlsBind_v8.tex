@@ -1,0 +1,584 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}\usepackage{fontspec}\setmainfont{TeX Gyre Pagella}\usepackage{xcolor}\definecolor{house}{HTML}{6E0E18}
+\usepackage{fancyhdr}\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\itshape Where Export Controls Bind}\fancyhead[R]{\small\itshape Kyung and Kim (2026)}\fancyfoot[C]{\small\thepage}\renewcommand{\headrulewidth}{0.3pt}
+\usepackage{setspace}\setstretch{1.15}\raggedbottom\usepackage{microtype}\usepackage{graphicx}\usepackage{booktabs,array,calc}\usepackage{arydshln}\setlength{\dashlinedash}{1pt}\setlength{\dashlinegap}{2pt}\setlength{\arrayrulewidth}{0.3pt}\renewcommand{\arraystretch}{1.35}\usepackage{caption}\captionsetup{font=small,labelfont={bf,color=house},justification=justified,singlelinecheck=false}
+\usepackage{amsmath,amssymb}\usepackage[hidelinks]{hyperref}\usepackage{float}\usepackage{placeins}\usepackage{needspace}\usepackage{enumitem}\setlist{noitemsep,topsep=2pt}
+\setcounter{topnumber}{3}\setcounter{bottomnumber}{3}\setcounter{totalnumber}{4}\renewcommand{\topfraction}{0.9}\renewcommand{\bottomfraction}{0.75}\renewcommand{\textfraction}{0.1}\renewcommand{\floatpagefraction}{0.85}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\newcommand{\passthrough}[1]{#1}\setlength{\parskip}{4pt}\emergencystretch=2.5em\hyphenpenalty=200\tolerance=2000
+\usepackage{titlesec}\titleformat{\section}{\large\bfseries\color{house}}{\thesection}{0.8em}{}\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.8em}{}\titlespacing{\section}{0pt}{14pt}{6pt}\titlespacing{\subsection}{0pt}{10pt}{4pt}
+\begin{document}
+\begin{titlepage}\thispagestyle{empty}\centering\vspace*{0.4cm}{\Large\bfseries\color{house} Where Export Controls Bind: Law and Lead in the Semiconductor Supply Chain, 2018–2026\par}\vspace{0.7cm}{\large Heekwon Kyung\textsuperscript{a} \quad Sanghoon Kim\textsuperscript{b}\par}\vspace{0.3cm}{\footnotesize \textsuperscript{a} Research Fellow, Korea Institute for Industrial Economics and Trade (KIET), Sejong, Republic of Korea; hee0718@kiet.re.kr; +82-44-287-3288 (corresponding author)\\ \textsuperscript{b} Senior Research Fellow, Korea Institute for Industrial Economics and Trade (KIET), Sejong; sanghoon\_kim@kiet.re.kr; +82-44-287-3181\par}\vspace{0.3cm}{\small Working paper, version 1 --- 13 October 2026\par}\vspace{0.6cm}
+\begin{minipage}{0.92\textwidth}\begin{center}\textbf{Abstract}\end{center}\small\setstretch{1.0}Does technology denial work? The question is old and the answer has always split. We argue that the split reflects the level at which evidence is gathered: controls are written for a product, a process step and an end user, but judged by country, industry and year. Reconstructing China's semiconductor record for 2017–2026 from public and audited sources alone — the geographic revenue notes of sixty-three firms, customs returns at the eight-digit line by origin, two memory makers' 2026 prospectuses, the sanctions registers — we find that one control regime produced four responses, and that each follows from whether the input the rule reached could be replaced. Huawei, cut off from a frontier foundry, lost 42 percent of revenue against peers and half of its consumer business against its own carrier segment. Its home market recovered only when a domestic processor returned; its overseas market did not. Lithography imports rose fivefold with no domestic substitute. China's etch and deposition makers kept growing at 30–40 percent a year while foreign peers stalled, yet never exceeded their own pre-control trend: the controls shielded the covered segments from a downturn, at a cost carried by state capital. Bilateral trade statistics show at most a faint trace of the controls, and one that changes with the customs source consulted; the accounts of the toolmakers the controls named show a clear cycle in their China sales. Listing a firm did nothing; withholding an input did. Leakage is a property of legal chokepoints, not a failure of enforcement — and evidence is relevant by its place in the value chain, not by the discipline that filed it.\vspace{0.35cm}\par\noindent\footnotesize\textbf{Keywords:} export controls; economic statecraft; weaponized interdependence; semiconductors; China; global value chains. \textbf{JEL:} F13, F51, F52, L63, O33, O38.\end{minipage}\vfill\end{titlepage}
+\section{Introduction}
+
+Whether a state can deny a rival a technology is among the oldest questions in economic statecraft and among the least settled. Eighteenth-century Britain forbade the export of textile machinery and the emigration of the artisans who built it, and lost the technology anyway: Samuel Slater carried Arkwright's spinning frame to Rhode Island in his memory in 1789; Francis Cabot Lowell did the same with the power loom in 1812 and financed his mill at Waltham with Boston merchant capital --- the beginnings, Nicholas (2019) argues, of American venture finance (Jeremy 1981). The rule reached drawings; it could not reach the tacit knowledge that artisans carried in their heads, and substitution needed only a financier. Britain repealed the bans in 1843. The modern literature opens with Hirschman's (1945) demonstration that asymmetric dependence is a source of influence, Baldwin's (1985) account of statecraft as a repertoire whose effects depend on the target, and Mulder's (2022) history of the economic weapon as an instrument forged between the wars. The Cold War supplied the largest experiment. CoCom policed Western technology trade with the Soviet bloc from 1949 to 1994, and the verdicts split along a line that has not moved since: denial raised the cost and slowed the pace of Soviet acquisition (Mastanduno 1992); sanctions seldom succeeded and targets substituted (Hufbauer, Schott and Elliott 1990; Pape 1997; Drezner 1999); and the Toshiba--Kongsberg affair of 1987, in which allied firms sold Moscow the machine tools for quieter submarine propellers, showed that a multilateral regime leaks through its members. The camps rarely disputed the facts of a case. They disputed which cases counted. The most recent reading of the CoCom record reaches the same divided verdict for the China controls: delay rather than denial, partner friction, and a target that routes around the list (Lind and Mastanduno 2025).
+
+The argument has resumed over the controls the United States has placed on China's access to semiconductor technology since 2019, framed now by the theory of weaponized interdependence (Farrell and Newman 2019; Drezner, Farrell and Newman 2021), by its extensions to supply chains and power transitions (Chen and Evers 2023) and to the cross-network leverage of the semiconductor chain in particular (Beaumier and Cartwright 2024), and by the industry history that made the chokepoints legible (Miller 2022; Bown and Wang 2024). The political economy of the chain itself --- extraterritorial jurisdiction as a source of structural power (Malkin and He 2024), the firms that hold the frontier (Hynek 2026), and the allied corporate networks that decide whether a control is honoured (Baines, Germann, Rolf and Starrs 2026) --- has been mapped in detail. One side points to Huawei's Mate 60 of August 2023, built on a domestic processor, and to the record revenues of Chinese toolmakers, and calls the controls a failure. The other points to the absence of extreme-ultraviolet (EUV) lithography in China, the collapse of Huawei's overseas business, the delays reported in CXMT's high-bandwidth memory and leading-edge DRAM, the yield penalty SMIC pays for multi-patterning on older lithography, and the record profits of the Korean memory makers that fill the gap, and calls the controls a success. Each describes something real; neither explains the other's evidence. Recent empirical work has examined one side of the rule at a time --- designation and the research spending of listed Chinese firms (Hu, Yang, Zeng and Zhang 2024; He, Chen, Huang and Li 2025; Cai and Xie 2026), or the cost to American suppliers whose customers were listed (Crosignani, Han, Macchiavelli and Silva 2026) --- and neither asks where the rule binds.
+
+We suggest the debate is hard to settle because the evidence and the rules sit at different altitudes. Controls are written for a product, a process step and an end user; evidence is gathered for a country, an industry and a year. From that height EUV lithography and a mature-node etch tool are the same line in the trade statistics. Read where the rule operates, the record is orderly. Controls bind completely where they reach an input that cannot be replaced, partly where it can be replaced at home but not abroad, and not at all --- or in reverse --- where it can be replaced with time and money. The boundary is drawn by what the rule reaches --- and seeing where it reaches requires knowing the value chain itself: which process step a tool serves, which firm holds the lead in it, and whether a substitute exists. The typology below is only as good as that knowledge.
+
+We make this argument with a reconstruction from public and audited sources alone: the geographic revenue notes of sixty-three listed firms on four exchanges, China's customs returns at the eight-digit line by country of origin, the 2026 prospectuses of China's two memory makers, and the sanctions registers. We use no licensed market-intelligence database, because results built on one cannot be verified or reproduced. What makes public data usable is the value-chain taxonomy within which we assembled them, so that a Dutch lithography shipment, a revenue line in ASML's report and an entry in the control list refer to the same node. The taxonomy and every extracted figure are released with the paper.
+
+Three findings organize the evidence. First, one regime produced four responses. Huawei lost 42 percent of group revenue against twenty-nine industry peers and half of its consumer-segment revenue against its own carrier segment (the network-equipment business that sells to telecom operators and that the rule did not reach). ZTE, suspended and restored, recovered in carrier equipment and never in handsets. Imports of deep-ultraviolet tools rose fivefold while domestic lithography stayed at zero. China's etch and deposition makers grew 30--40 percent a year through a downturn that stopped their competitors. The probability that the three responses we can test against placebo comparisons (the cut-off, the lifted ZTE handset business and the shielded toolmakers) would all line up by chance is 0.004. Second, the domestic toolmakers did not accelerate. Against their own trend they are below it. The controls removed import competition from the covered segments and insulated them from the 2023 downturn; the prospectuses show that the cost of that insulation was carried by state capital. Third, the controls bind inside firms. No clear compliance ladder appears in trade at the six- or eight-digit level; the traces that exist are faint and depend on which customs statistics one reads. It appears in the books of the vendors whose products were listed, as a cycle of collapse, overshoot and normalization their uncontrolled neighbours do not show. Being named on a list had no revenue effect. Losing an input did.
+
+The contribution is threefold. To the literature on economic statecraft: the question is not whether denial works but where, and the answer depends on the substitutability of the input and the fiscal capacity of the target. To the theory of weaponized interdependence (Farrell and Newman 2019): a scope condition. Chokepoints built by rule decay as substitutes appear and leak before they take effect; chokepoints borrowed from a technological lead do neither; and a rule can borrow a technological lead, which is how Huawei was cut off. To the measurement of fragmentation: a warning. The United States--origin share of China's dry-etch tool imports fell from 43 percent in 2019 to 5 percent in 2025, while shipments from the same firms' Singapore and Malaysian plants rose from 13 to 43 percent. Origin-based statistics read relocation as decoupling.
+
+Section 2 sets out the theory, seven propositions, the data and the design; the four responses are named cut off, frozen abroad, shielded substitution and beyond the law's reach, and we use the shorthand kill, freeze, feed and untouched where it reads more easily. Sections 3--5 present the three findings. Section 6 discusses implications and concludes.
+
+\FloatBarrier\Needspace*{12\baselineskip}
+\section{Theory, data and design}
+
+\subsection{Chokepoints and what holds them}
+
+A chokepoint is a position from which an input others cannot replace can be withheld. The weaponized-interdependence literature describes the position in network terms and asks who holds it (Farrell and Newman 2019). It does not ask what keeps the holder there, which is the question the governance literature on global value chains asks of every link --- who can switch suppliers and who cannot (Gereffi, Humphrey and Sturgeon 2005). Hirschman (1945) had already separated the supply effect of trade --- the gains a country cannot easily forgo --- from the influence effect that dependence confers; the distinction below is a descendant of his. Two things can hold a chokepoint.
+
+A legal chokepoint is held by law. It exists within the jurisdiction that writes the rule, needs enforcement, decays as the input is substituted, and leaks in the interval between a rule's announcement and its effective date. A technological chokepoint is held by a technological lead no rival can close in the relevant horizon. It is self-enforcing, binds wherever the technology is sold, and isolates the substitutes it provokes. EUV lithography is the paradigm. The distinction is not law versus technology. A rule can attach to a technological lead --- the foreign direct product rule attached to Taiwan's leading-edge foundry cut Huawei off --- and then inherits the lead's reach. What determines the target's response is the substitutability of the input the rule attaches to.
+
+\subsection{Four responses}
+
+
+\begin{table}[htbp]\centering\footnotesize\setstretch{1.05}\begin{tabular}{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Input reached
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Replaceable?
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Response
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Case
+\end{minipage} \\
+\midrule
+Frontier foundry (technological lead) & No & \textbf{Cut off} (kill) & Huawei's processors; YMTC's frontier tools \\
+\hdashline
+Software, ecosystem, market access & At home only & \textbf{Frozen abroad, revived at home} (freeze) & Google Mobile Services → HarmonyOS \\
+\hdashline
+Mature hardware & With time and public money & \textbf{Shielded substitution} (feed: insulation, not acceleration) & Etch, deposition, cleaning tools \\
+\hdashline
+None (the lead alone sets the limit) & --- & \textbf{Beyond the law's reach} (untouched) & DUV lithography imports \\
+\bottomrule
+\end{tabular}\end{table}
+
+
+\subsection{Propositions}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{P1 Cut off.} Where the input has no substitute, the targeted business collapses. \emph{Falsified if} alternative sourcing restores revenue.
+\item
+  \textbf{P2 Frozen abroad, revived at home.} Where the rule attaches to software or market access, foreign revenue freezes; domestic revenue holds or recovers once a substitute exists. \emph{Falsified if} domestic revenue falls in step with foreign.
+\item
+  \textbf{P3 Beyond the law's reach.} A technological chokepoint reaches as far as the lead's commercial reach, not the law's. \emph{Falsified if} imports of the tier no rule reaches (DUV lithography) fall together with the controlled tier --- which would mean that the law, not the lead, was setting the limit.
+\item
+  \textbf{P4 Hysteresis.} After a rule is lifted, markets where customers can switch do not recover; locked-in relationships do. \emph{Falsified if} consumer revenue recovers as fully as carrier revenue.
+\item
+  \textbf{P5 Shielded substitution.} Where the rule removes import competition from a mature segment, domestic suppliers hold their prior trajectory through downturns and do not exceed it; the insulation is confined to the rule's footprint and its cost is borne by the state. \emph{Falsified if} uncontrolled segments are equally insulated, or growth exceeds the pre-control trend.
+\item
+  \textbf{P6 Lists are not denial.} Designation has no revenue effect independent of the inputs withheld. \emph{Falsified if} designation per se predicts revenue loss.
+\item
+  \textbf{P7 Rules bind inside firms, not in trade flows.} A rule changes which customers a toolmaker may serve and when, not how much it sells in total; the effect is therefore visible in the vendor's customer mix, not in aggregate trade. Trade shows no ladder; controlled vendors' books show a cycle uncontrolled vendors' do not. \emph{Falsified if} trade sorts by alignment or uncontrolled vendors show the cycle.
+\end{itemize}
+
+\textbf{Scope condition.} Shielded substitution and revival require fiscal capacity to carry losses through substitution. Without it, denial of mature inputs produces rerouting rather than substitution (Russia after 2022; see Section 6). The pattern is old: Lowell's loom became an industry because Boston capital was willing to carry it, as state capital carries China's toolmakers today. The Soviet case is the clearest instance of the condition failing. CoCom's denial of lithography and computing bound completely; the Soviet strategy of copying Western chips kept its industry a generation behind; and no domestic substitute ever closed the gap (Miller 2022). Russia after 2022, without an advanced fab and dependent on diverted chips, is the same case in the present tense. Denial of an input held by a technological lead against a target that cannot finance substitution is where technology controls work exactly as intended.
+
+\subsection{Alternative explanations}
+
+Four alternatives predict some of the same patterns. The industry cycle predicts that all toolmakers slump in 2023 and recover in 2024; it does not predict that Chinese etch makers hold their trend while Chinese metrology makers slump (4.2). Subsidy and capacity build-out predict growth in every Chinese segment the Big Fund touches; they do not predict a footprint that matches the control list, nor a null effect of designation (5.4). Tariffs and procurement rules predict a fall in China's exports to the United States across sensitive products and a relocation of assembly; they explain the one product that stands out in importer-reported data --- servers, whose assembly for the United States moved to Mexico and Taiwan after 2022 (5.1) --- better than the export controls do. Generic fragmentation predicts that allied suppliers lose China revenue; their books show a cycle in customer mix, not a loss of the market (5.3). Each alternative is tested where the design keeps it apart.
+
+\subsection{Data: three layers}
+
+
+\begin{table}[htbp]\centering\footnotesize\setstretch{1.05}\caption*{\textbf{Table 1. Sources}}\begin{tabular}{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Layer
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Coverage
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Unit
+\end{minipage} \\
+\midrule
+Corporate disclosure & SEC EDGAR 10-K/10-Q & 63 US-listed firms + 36 competitors & geographic revenue, quarterly/annual \\
+\hdashline
+& EDINET yūka shōken hōkokusho & 19 Japanese toolmakers & revenue by region, fiscal year \\
+\hdashline
+& OpenDART & 9 Korean firms & revenue by region \\
+\hdashline
+& cninfo & 47 Chinese listed firms + 7 predecessors & annual and quarterly reports \\
+\hdashline
+& SSE STAR filings & YMTC, CXMT prospectuses (2026) & revenue, losses, shareholders \\
+\hdashline
+& Huawei, SMIC, Hua Hong, ZTE & annual and quarterly reports & segment revenue \\
+\hdashline
+Customs & GACC & HS8 by month and origin, 2016--2026 & USD \\
+\hdashline
+& BACI V202601; UN Comtrade monthly & world and bilateral trade & HS6 \\
+\hdashline
+Policy record & Federal Register; Dutch Staatscourant; Japanese METI orders; Entity List & treatment dates and scope & gazette citation \\
+\bottomrule
+\end{tabular}\end{table}
+
+
+Baskets are fixed in advance: wafer-fabrication equipment excludes HS 848630; semiconductors exclude photovoltaic cells; integrated circuits are taken at HS 8542. Every treatment date is taken from the official publication of the rule --- the Federal Register, METI's notice, the Dutch Staatscourant (Figure 1).
+\begin{figure}[htbp]\centering\includegraphics[width=0.9\textwidth]{figures_v2/figG1_timeline.pdf}\caption{The rules, 2018–2025, by jurisdiction. Each point is the date a measure took effect (ZTE denial order 15 April 2018, lifted 13 July 2018; Huawei listed 16 May 2019; foreign direct product rule 15 May and 17 August 2020; SMIC listed 18 December 2020; US rules of 7 October 2022, 17 October 2023 and 2 December 2024; YMTC listed 15 December 2022; Japan in force 23 July 2023; Netherlands in force 1 September 2023 and 7 September 2024; AI diffusion rule 13 January 2025, rescinded 13 May 2025; VEU revocation announced 29 August 2025, in force 31 December 2025).}\label{fig:F1}\end{figure}
+
+
+\subsection{Why public data, and what holds them together}
+
+Commercial market-intelligence products are finer-grained and ready-made. Their cost, licences and undisclosed methods make results built on them hard to verify. We built a composite database from public sources. Its structure, not its sources, makes it usable: each item was placed in a value-chain taxonomy --- process step, tool category, firm, tariff line, control-list entry --- before extraction. The crosswalks are in Appendix A. Where public data are coarser we grade the source. We do not use industry-tracker shipment estimates, which differ across trackers in totals, basis and brand boundaries; handset volumes are therefore outside the paper.
+
+Two cross-checks show the layers fit. China's imports of Dutch lithography tools match ASML's audited China revenue within a ratio of 0.86--1.01 in each of seven years. Shipments of United States, Singaporean and Malaysian origin together track the audited China revenue of the three largest American toolmakers with a correlation of 0.92; United States origin alone tracks it at 0.38. Origin is not nationality.
+
+\subsection{Estimation and inference}
+
+Treated units are few and treatment dates are public. For each targeted firm we estimate synthetic difference-in-differences against an industry donor pool (Arkhangelsky et al.~2021) and report the rank of the estimate among placebo estimates from treating each donor in turn (Abadie, Diamond and Hainmueller 2010). With twenty-nine or fifteen donors the smallest attainable p-value is 0.033 or 0.063; we report the floors. For domestic toolmakers we add a second counterfactual, the firm's own pre-control trend, with the ridge-augmented synthetic control of Ben-Michael, Feller and Rothstein (2021). For trade we use randomization inference over destinations and the Romano--Wolf correction across products. The three cells that admit placebo inference are combined with Fisher's method, under independence and under a cross-cell correlation of 0.4. A seven-estimator battery, conformal inference and honest difference-in-differences bounds are in Appendix B.
+
+\subsection{Audit}
+
+All figures were extracted by machine and checked against the original documents repeatedly and from several directions; the audit log and the values retired along the way are in Appendix F. Retired values are listed with the reason for retirement.
+
+\FloatBarrier\Needspace*{12\baselineskip}
+\section{One regime, four responses}
+
+\subsection{Cut off}
+
+The May 2019 designation cut Huawei's access to Google's services; the foreign direct product rule of 2020 cut its access to any foundry using American tools, which meant TSMC. Overseas revenue fell from 352 to 224 billion yuan between 2019 and 2021; the consumer segment from 467 to 243. Against twenty-nine listed peers in the same industries, synthetic difference-in-differences puts the group effect over 2021--23 at −42 percent, first of thirty placebo paths (p = 0.033) (Figure 2a).
+\begin{figure}[htbp]\centering\includegraphics[width=0.9\textwidth]{figures_v2/fig00_typology.pdf}\caption{One control regime, four responses. Red: the targeted or domestic series; grey dashed: the comparison; navy: Huawei China revenue; pink: the rule that applied. Huawei consumer versus carrier segment revenue (2019 = 100); Huawei overseas versus China revenue; Chinese toolmakers versus the foreign-peer median (log); allied-origin lithography imports (HS 84862039); no domestic immersion scanner was in production use through 2025. Sources: Huawei annual reports; SEC EDGAR, OpenDART, cninfo; GACC.}\label{fig:F2}\end{figure}
+
+
+The within-firm comparison needs no external control. From the 2019--20 average to the 2021--22 average, Huawei's consumer segment fell 52 percent (0.73 log points); its carrier segment, which the rule did not reach, fell 6 percent; its enterprise segment rose 23 percent. The difference between consumer and carrier is 49 percent (0.67 log points), about half. The supplier's books show the cut: TSMC's China revenue fell 30 percent in 2021 and its China share from 19 to 10 percent (Appendix Figure A5).
+
+\subsection{Frozen abroad, revived at home}
+
+Abroad, where the rule attached to software and market access, the loss has not reversed: overseas revenue was 265 billion yuan in 2025 against 352 in 2019, a quarter lower. At home the consumer segment recovered after the Kirin processor returned in August 2023: consumer revenue was 214 billion yuan in 2022 and 344 billion in 2025, up 61 percent and still 26 percent below 2019, while China revenue rose from 507 to 616 billion yuan, 22 percent above 2019. Revival followed a domestic substitute, as P2 requires.
+
+\subsection{Lifted}
+
+ZTE's denial order of April 2018 cut quarterly revenue by 58 percent year on year in the following quarter (11.9 against 28.3 billion yuan); the July 2018 settlement restored access. Carrier revenue recovered fully: +1 percent against peers, rank 16 of 30. Handset revenue did not: −47 percent, first of thirty (p = 0.033); in level it regained only nine-tenths of its 2017 size by 2025 (Appendix Figure A5). Customers who could switch did not switch back; operators locked into the installed base waited. Had consumer revenue recovered like carrier revenue, P4 would have failed.
+
+\subsection{Beyond the law's reach}
+
+No rule reached the lithography that mattered; the lead did the work. Through 2025 no domestic immersion scanner was in production use. SMIC began testing one in September 2025 and low-volume output of about five systems was reported for 2026, with qualification for production targeted at 2027 --- a substitute arriving, but years after the imports that built the capacity (Financial Times 2025; Tom's Hardware 2026). Lithography imports rose fivefold between 2019 and 2024, and imports of Dutch origin elevenfold. The average price of an imported Dutch lithography tool rose from 20 million dollars in 2019 to 37 million in 2024 and 51 million in 2025, consistent with a shift to the most capable immersion systems still permitted. Domestic lithography stayed at zero. No price point in the import record corresponds to an EUV system (Figure 2c). The controls that arrived leaked where legal chokepoints leak: Dutch monthly lithography shipments to China, which had averaged about 120 million dollars in the twelve months before the Dutch rule was announced in March 2023, reached 700 million in August 2023 and 1.3 billion in September, the month the rule took effect (customs record arrivals, which lag shipments), and stayed near a billion a month through December as licensed deliveries were completed; Japanese shipments of the tool categories named in METI's order peaked in July 2023, the month the order took effect, at 640 million against a prior-year average of 365 million. The lag is a property of allied controls, not a Dutch peculiarity.
+
+\subsection{Shielded substitution, in brief}
+
+China's domestic share of fabrication equipment rose from about 10 to about 30 percent; its share of lithography stayed at zero (Section 4). The memory makers anticipate P6. YMTC, designated in 2022, grew NAND revenue from 141 to 567 billion yuan over 2023--25; CXMT, never designated, from 91 to 618 (Appendix Figure A7). The list did not predict the trajectory; the tools a firm could buy did.
+
+\subsection{Joint falsification}
+
+Three cells admit placebo inference: the cut-off (p = 0.033), the lifted handset business (p = 0.033) and shielded substitution against peers (p = 0.063). Each sits at its floor. Combined, Fisher's method gives p = 0.004 under independence and about 0.03 under a cross-cell correlation of 0.4. The alignment, not any one estimate, carries the argument.
+
+\FloatBarrier\Needspace*{12\baselineskip}
+\section{Shielded substitution: insulation, not acceleration}
+
+\subsection{Two counterfactuals}
+
+The October 2022 rule removed foreign etch, deposition and cleaning tools from covered fabs. NAURA, AMEC and ACM Research make those tools. With revenue indexed to 100 in 2019, the three reached 830 in 2025; the median of fifteen foreign equipment and equipment-component suppliers reached 162 (Figure 3a). Against their own history the answer differs. They grew 40--69 percent a year before the controls and 31--39 percent after. Their 2017--22 trend extrapolates to 1,293 in 2025. They did not accelerate. They did not stop either: in 2023--24, when foreign toolmakers' revenue was flat, theirs never turned negative (Figure 3b).
+\begin{figure}[htbp]\centering\includegraphics[width=0.9\textwidth]{figures_v2/fig02_feed.pdf}\caption{Shielded substitution. (a) Revenue of NAURA, AMEC and ACM Research (2019 = 100, log) against their own 2017–22 log-linear trend and the median of fifteen foreign equipment and equipment-component suppliers (band: interquartile range). (b) Annual revenue growth of the three Chinese firms and the aggregate of the fifteen foreign suppliers. (c) Change in average annual growth, 2023–25 versus 2019–22, by firm; red marks segments covered by the October 2022 rule; Changchuan uses the one comparable post-2022 year and the AMEC pre-period starts in 2020. Sources: audited quarterly and annual accounts in USD.}\label{fig:F3}\end{figure}
+
+
+Against a ridge-augmented synthetic control of foreign peers, the quarterly effect is +93 percent for NAURA (0.66 log points; first of sixteen placebo paths) and +119 percent for AMEC (0.78; first). Against the same estimator after removing each firm's pre-2022 trend, +31 and +11 percent (0.27 and 0.11 log points), fifth and seventh of sixteen. A specification curve of 112 estimates --- seven estimators, two data preparations, two counterfactuals, four units --- confirms that the counterfactual, not the method, decides: 93 percent of estimates against peers are positive (median +138 percent); 73 percent against own trend (median +16 percent) (Figure 4). Honest difference-in-differences bounds admit zero once pre-trend violations of the observed size are allowed (Appendix B). The strong form of feed --- acceleration --- is not identified. The weak form --- insulation --- is.
+\begin{figure}[htbp]\centering\includegraphics[width=0.9\textwidth]{figures_v2/fig04_spec_curve.pdf}\caption{Specification curve. (a) 112 estimates of the feed, sorted by size; red against foreign peers, navy against each firm's own pre-2022 trend; dotted lines mark medians. (b) For each estimate, which estimator, counterfactual, data preparation and unit produced it. Quarterly panel 2017Q1–2025Q4, 15 foreign donors; clean re-run of 25 October 2026 (spec\_curve\_rerun.py in the replication package).}\label{fig:F4}\end{figure}
+
+
+\subsection{The rule's footprint}
+
+The fall in average annual growth between 2019--22 and 2023--25 was 7 points for NAURA, and AMEC's growth rose 3 points, in the etch and deposition segments the rule covered; 18 points for ACM Research in cleaning; 56 points for Kingsemi in track, 11 for Jingce in display metrology and, over the one comparable year, more than 100 for Changchuan in back-end test, none covered (Figure 3c). The segments that held their trajectory were those from which imports had been removed. The dynamic effects grow with time: NAURA's gap over peers was +0.40 log points in 2023, +0.58 in 2024 and +0.91 in 2025 (Appendix Figure A2).
+
+\subsection{The second wave}
+
+The December 2024 package --- 140 designations including NAURA, extension of the foreign direct product rule to foreign-made tools with American content, and HBM controls --- tests P5 twice. The gap over peers did not close after the toolmakers' own designation: the aggregate rose from +58 percent over peers in 2024 to +103 percent in 2025 (0.46 to 0.71 log points; change +0.24, second of sixteen); AMEC from +116 to +232 percent (0.77 to 1.20; first); NAURA +0.30 (second), ACM Research +0.10 (fourth) (Appendix Figure A1). The limit: 2025 also carried the January AI diffusion rule, its May rescission and a new tariff schedule. The second-wave estimate cannot be assigned to one of them.
+
+\subsection{Who paid}
+
+CXMT's pre-listing shareholder register --- the holders of the company's equity, not the financing of any one plant --- shows Hefei's state investment system holding about 37 percent through several vehicles (Qinghui Jidian 21.67 percent, Changxin Jicheng 11.71 percent, Hefei Jixin 8.37 percent), the second National IC Fund 8.73 percent and Anhui Provincial Investment 7.91 percent; state-owned holders together held about 54 percent before the July 2026 listing. YMTC's shows Hubei Changsheng, a provincial--municipal--district platform, at 26.54 percent, Xinfei Technology at 25.35, the first and second national funds at 11.97 and 11.38, Optics Valley Industrial Investment at 9.25 and the Hubei Guoxin fund at 5.90 --- the four largest holders, all state capital or national funds, hold 75 percent, and state-linked capital exceeds 90 percent. Its attributable net income went from a loss of 19.2 billion yuan in 2023 to profits of 6.8, 14.2 and, in 1Q 2026 alone, 33.4 billion. YMTC's weighted return on equity was −27.7 percent in 2023, 8.2 in 2024, 15.1 in 2025 and 28.0 in 1Q 2026; research spending fell from 23.0 to 3.75 percent of revenue as revenue rose from 18.7 to 63.2 billion yuan. Public capital held the trajectory through the loss years; the memory cycle turned it profitable. That is insulation at the state's expense, and why the scope condition matters. The mechanism is the one List (1841) generalized into the infant-industry argument, and that the recent evidence on industrial policy has rehabilitated with conditions attached (Juhász, Lane and Rodrik 2024): removing import competition does not make the substitute efficient; it gives the substitute a market and a treasury while it learns. The instruments China used --- guidance funds, provincial platforms, procurement --- are those Naughton (2021) describes as the post-2015 model.
+
+\subsection{Limits}
+
+Pre-control growth was steep, so the own-trend counterfactual absorbs most of the effect. Removal of import competition cannot be separated from concurrent fab expansion financed by the same funds. The foreign donor pool is exposed to Chinese demand. Both donor pools are reported; signs do not change.
+
+\FloatBarrier\Needspace*{12\baselineskip}
+\section{Where rules bind: firms, not flows}
+
+\subsection{No clear ladder in trade}
+
+If controls sorted trade by alignment, Chinese exports of sensitive products to the United States and its allies should have fallen relative to other destinations after 2022. We test this with five product baskets fixed in advance (Appendix A) on three sources that record the same flows differently: BACI, which reconciles exporter and importer reports; China's own reported exports; and the importing countries' reported imports from China (both from UN Comtrade). The United States is one treated destination among forty and the eleven allies one group among many, so inference is by randomization: the treated destination is replaced by each of the forty largest others in turn, and the allied group by one hundred random groups of eleven, with the Romano--Wolf step-down correction across the five products.
+
+Raw changes are large. Exports of servers and network equipment to the United States fell by 30 to 52 percent relative to other destinations in the two importer-based sources, and by 14 to 30 percent in China's own export returns; exports of fab tools to the allies fell by about half in BACI and in China's returns, and by a quarter in the importers' returns. Against the placebo distributions, little of this is distinctive (Figure 5). For the United States, servers are the only product at the edge of the cloud (rank 1 of 40 in BACI and in importer-reported data; network equipment is second in BACI) and even that disappears in China's own export returns (rank 11); after the correction no product in any source is significant at 5 percent (smallest adjusted p = 0.34). For the allies, the declines are consistent in sign across sources but their significance is not: one-sided p-values are at or below 0.05 for four of the five baskets in BACI (0.08 for fab tools), between 0.07 and 0.20 in China-reported data, and above 0.2 in importer-reported data, and after correction the smallest adjusted p is 0.08 (BACI) and 0.07 (China-reported, fab tools). Narrower definitions of the allied group --- the two countries that codified controls, or the five with the largest chokepoint industries --- give weaker results still (Appendix C). What the trade statistics show is at most a faint and source-dependent trace of alignment, not a ladder.
+\begin{figure}[htbp]\centering\includegraphics[width=0.9\textwidth]{figures_v2/fig03_no_ladder.pdf}\caption{No clear compliance ladder in bilateral trade. Red: change in log exports 2023–24 versus 2019–21 for the treated destination(s) minus the same change for all other destinations; grey: the same statistic for the 40 largest other destinations (39 with positive flows in the importer-reported source; top row) or 100 random groups of eleven countries (bottom row); 7 of 2,100 placebo values lie beyond the axis range; numbers: Romano–Wolf adjusted one-sided p across the five baskets. Columns: BACI; China's reported exports; importers' reported imports (UN Comtrade). Baskets v2, Appendix A.}\label{fig:F5}\end{figure}
+
+
+Part of the difference between sources is mechanical: China's returns record exports to Hong Kong that importers record as arriving from China, so a decline in direct shipments to the United States can appear as an unchanged total in China's books. The server case shows why the source matters. China reports its exports of processing units (HS 847150) to the United States as flat, 1.1 billion dollars in 2019 and 1.2 billion in 2024; the United States reports its imports of the same line from China as falling from 1.4 to 0.6 billion. Discrepancies of this kind between partner-reported trade statistics are not new --- Morgenstern (1950) built a book around them --- but they are rarely allowed to bear on inference about controls. The gap opened after 2022, while United States imports of the line from Mexico rose from 25 to 81 billion and from Taiwan from 3 to 70 billion over 2019--25, as the assembly of AI servers moved to North America (Figure 6). The one product that looked like a compliance effect in importer data is, on closer inspection, a relocation recorded differently at the two borders --- another instance of origin diverging from nationality.
+\begin{figure}[htbp]\centering\includegraphics[width=0.9\textwidth]{figures_v2/figG2_server_origin.pdf}\caption{United States imports of processing units (HS 847150, the tariff line that carries servers) by origin, USD bn, for 2019, 2022, 2024 and 2025. Other includes Malaysia and Viet Nam. UN Comtrade, United States as reporter, imports by partner.}\label{fig:F6}\end{figure}
+
+
+\subsection{Nor at the tariff line}
+
+Six-digit coarseness is not the explanation. At the eight-digit line in China's returns, controlled categories (immersion lithography, chemical vapour deposition, dry etch, other deposition) can be separated from uncontrolled ones (furnaces, physical vapour deposition, steppers, implanters, wet etch). After 2022 the controlled lines show no distinctive level (p = 0.51), volatility (p = 0.63) or 2025 normalization (p = 0.94), from allied or other origins (Appendix Figure A3). Allied-origin imports of controlled tools rose, from 1.1 to 10.0 billion dollars a year for lithography alone. Customs record which tools arrived. They do not record which fab received them.
+
+\subsection{The signature in the vendors' books}
+
+The rule is visible in the books of the vendors it named (Figure 7). Applied Materials' quarterly China share went from 34 percent in 2022 to 17, to 45 in 2024 and back to 27 by mid-2026 (fiscal years: Applied Materials ends in October, KLA and Lam in June, the Japanese vendors in March; the quarterly series in Figure 7 are plotted at report dates). KLA, Lam, Tokyo Electron and SCREEN traced the same curve: Tokyo Electron's fiscal-year share ran 24, 44, 42, 34 percent from fiscal 2023 to 2026 and SCREEN's 20, 39, 42, 38. DISCO and ULVAC sell into the same fabs, were not listed, and stayed within a few points of flat. The signature is a shape rather than a level. Between 2019--21 and 2023--25 the controlled vendors' average China share rose 3.2 points relative to the uncontrolled (p = 0.43). What distinguishes them is the cycle: the standard deviation of their annual changes after 2022 is 7.2 points higher, the largest of the twenty-one assignments of five treated firms among seven (p = 0.048; Appendix Figure A4), and their 2025 normalization is 5.8 points deeper (third of twenty-one). The controls changed what these firms sold to China and when, not how much.
+\begin{figure}[htbp]\centering\includegraphics[width=0.9\textwidth]{figures_v2/fig05_compliance.pdf}\caption{The compliance signature. China share of revenue for toolmakers whose products were listed (red) and two Japanese toolmakers whose main products — dicing saws and general-purpose sputtering — fall largely outside the listed categories (grey). SEC 10-Q revenue by customer location (AMAT, KLA; plotted at quarter end; fiscal fourth quarters, reported only in the 10-K, are not plotted) and EDINET revenue by region (TEL, SCREEN, DISCO, ULVAC; fiscal years ending March, plotted at the fiscal mid-year). Pink: US rules of October 2022 and December 2024; dashed navy: Japan's controls in force July 2023.}\label{fig:F7}\end{figure}
+
+
+Disclosures agree. Mentions of export controls in the American toolmakers' 10-Ks rose from zero to 1--3.6 per ten thousand words after 2022; the slope of China share on stated exposure is −0.80 (p = 0.37, ten vendors). What moved was origin. The United States--origin share of China's dry-etch imports fell from 43 percent in 2019 to 5 percent in 2025; the share from the same firms' Singapore and Malaysian plants rose from 13 to 43 (Appendix Figure A6). After the December 2024 extension, American-origin tool imports fell 29 percent and Japanese 10 percent while Singaporean and Malaysian origin rose 41 percent, because the extended rule reaches advanced-node fabs and leaves mature-node demand open; In January--August 2026 against the same months of 2025, imports of United States origin were down 15 percent and Japanese origin 14 percent, Singapore and Malaysian origin up 25 percent, and Dutch origin down only 5 percent. At the plant level: after YMTC's designation, Hubei's imports of tools made by American firms fell 66 percent while other tools did not fall, and the province fell from second to fifteenth among importers. The 2025 revocation of validated end-user authorizations is not distinguishable from the national decline; its effect appears, if anywhere, in Samsung's and SK hynix's reported evaluation of a Chinese etch supplier (Reuters, 5 August 2026).
+
+\subsection{Lists are not denial}
+
+Across eight firms designated at different dates in 2019--24, the Callaway--Sant'Anna effect of designation on revenue over three years is −0.09 log points, interval −0.33 to +0.22 (p ≈ 0.53); cohort estimates −0.35, −0.18, +0.21. An earlier estimate of −0.73 rested on a unit error in one firm's revenue; we report the correction because the retired number is what the designation literature tends to find. The two memory makers make the point in a pair: YMTC was put on the Entity List and CXMT was not, yet both grew several-fold from 2023 to 2025 --- YMTC 3.4 times, CXMT 6.8 times on the DRAM upcycle --- because both could still buy mature tools and neither could buy frontier ones. The listing itself changed little; the input available to each firm decided its path. The Chinese toolmakers designated in December 2024 widened their lead over foreign peers in 2025. What binds a firm is the input withheld from it, not its presence on a list. This is consistent with the finding that designation raises listed firms' research spending (Hu, Yang, Zeng and Zhang 2024 report a 16.6 percent rise in R\&D intensity): a listed firm may spend more on research; on this evidence it does not sell less.
+
+Rules of this kind have always been administered through licences, and have always leaked through them: after the fall of Acre in 1291 the papacy banned all trade with Mamluk Egypt, and Venice and Genoa went on trading under licences the papacy itself issued (Stantchev 2014). The validated end-user authorizations of 2007--2025 were the same instrument. A rule changes which customers a vendor may serve and when. Customs record what arrived. Trade shows no ladder because the same tools kept arriving; the vendors' books show the cycle because the customers changed.
+
+\FloatBarrier\Needspace*{12\baselineskip}
+\section{Discussion and conclusion}
+
+For weaponized interdependence the findings add a scope condition. A firm's position in the chain tells us who is able to withhold an input; what keeps that firm in its position --- a law or a technological lead --- tells us what withholding will achieve. A technological lead reaches as far as it is sold and isolates the substitutes it provokes. A rule reaches as far as the law, decays as substitutes appear, and leaks before it takes effect. A rule attached to a technological lead inherits the lead's reach.
+
+For fragmentation measurement the findings are a caution. Reallocation within a firm's own plants --- Texas to Singapore, the Netherlands to a stockpile --- reads as decoupling in origin statistics while sales stay where they were. For the cost-of-controls literature they are complementary: Crosignani, Han, Macchiavelli and Silva (2026) show that American suppliers whose Chinese customers were listed halted those sales as intended, failed to find replacement customers, and lost about \$130 billion in market value, while the listed Chinese firms' revenues rose; the vendors' books examined here add two qualifications: the American toolmakers did not lose the Chinese market but re-sorted it --- their China sales fell, overshot and normalized as customers changed, which is a cycle in customer mix rather than an exit --- and the Chinese suppliers that gained were insulated from a downturn rather than accelerated beyond their own trend.
+
+The typology therefore does not say that controls fail. It says where they bind: completely where the input is a technological lead and the target cannot replace it --- the Soviet Union then, Russia now --- and as insulation where the target can pay for a substitute. The policy question is not whether to deny but what the target can afford to build in the shadow of the denial. Three implications follow, none of them comfortable. The interval between announcement and enforcement is where legal chokepoints leak, and the allied controls of 2023 leaked as much as the American ones. The effect of allied codification appears in firms' procurement rather than in trade flows, so evaluations conducted in trade data will go on finding little. And designation is cheap and does little by itself; the controls that bound were those that withheld an input, and those carry costs on both sides of the line.
+
+The limits are those the design makes visible. The treated units are few and the attainable p-values are bounded; the domestic toolmakers were already growing so fast before 2022 that we cannot tell whether the controls raised their growth above that trend (the strong claim), only that growth did not fall below it (the weak one); provincial customs data record the province of the firm that cleared the import, not necessarily the plant that installed the tool; currency conversion is annual; and 2025 carries overlapping treatments. The comparison that would most sharpen the scope condition --- a target without China's fiscal capacity --- lies outside the data, though Russia's experience after 2022, in which denial produced rerouting rather than substitution, is consistent with it (Miller 2022; KSE Institute 2024).
+
+One regime, read at the level at which it was written, produced four responses, and the four are what the typology predicts. Where the rule reached an input with no substitute, the business collapsed and has not returned abroad. Where it reached an ecosystem that could be rebuilt at home, foreign revenue froze and domestic revenue recovered once the substitute existed. Where no rule reached the input that mattered, imports rose fivefold and the frontier stayed where the technological lead put it. Where the rule removed import competition from mature segments, domestic suppliers held their course through a downturn, at a cost the state carried. The controls did their work inside the firms they named --- in which customers those firms could serve and when --- and left in the trade statistics only a faint trace that shifts with the source consulted.
+
+Leakage is not a failure of enforcement. It is a property of the chokepoint a rule can build: one that holds within the jurisdiction that writes it, for the inputs it names, until a substitute exists or a stockpile is laid in. The controls that did not leak rested on a technological lead.
+
+Marc Bloch distinguished the sources that were written to be read from those that testify, as he put it, in spite of themselves --- the charters, accounts and tax rolls that reveal a society precisely because nobody composed them for posterity (Bloch 1953, ch.~2). The evidence that settled each question in this paper was of the second kind. A toolmaker's revenue-by-region note, a memory maker's shareholder register, the country-of-origin column in a customs return and the date on a gazette entry were none of them collected for the study of economic statecraft, and each proved more informative than the bilateral trade statistics that were. Where a rule binds is found in the customer mix of the firms it names, not in the aggregates designed to record trade.
+
+The test of relevance this suggests is positional rather than disciplinary. A record matters if the entity that produced it holds a function in the value chain that the rule touches, whatever field the record was filed in; and firms in such positions can serve as sentinels, in the epidemiologist's sense, where a change registers before it appears in the averages. As the firms that hold key functions in global value chains --- in equipment, materials and intellectual property, across several countries --- become the places where rules actually bind, the records those firms leave behind, and the technical knowledge needed to read them, are likely to matter more to this literature than the aggregates it has relied on.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section*{Acknowledgements and disclosures}
+
+This paper uses no licensed market-intelligence data. All figures are reconstructed from public filings, customs returns, prospectuses, sanctions registers and press releases listed in Appendix A, and the registry, code and extracted documents are released with the paper. Replication materials (code, processed data, figure scripts and the canonical registry of every number) are deposited on Zenodo {[}DOI to be inserted on deposit{]} and mirrored at github.com/hee880718/wecb-replication; the public source documents are deposited as a separate Zenodo record. The authors used Claude Fable 5.1 (Anthropic) to assist with data-extraction and analysis code, literature search, figure-generation code and English drafting and editing. All data were verified against the original documents, all analyses were specified and interpreted by the authors, and the authors take full responsibility for the content; no generative-AI images were used. Views are the authors' own and do not represent their institutions. Comments welcome.
+
+\clearpage\section*{References}\begingroup\footnotesize\setstretch{1.0}
+
+
+
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Abadie, A., A. Diamond and J. Hainmueller. 2010. Synthetic control methods for comparative case studies. \emph{Journal of the American Statistical Association} 105(490): 493--505.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Arkhangelsky, D., S. Athey, D. Hirshberg, G. Imbens and S. Wager. 2021. Synthetic difference-in-differences. \emph{American Economic Review} 111(12): 4088--4118.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Baldwin, D. A. 1985. \emph{Economic Statecraft}. Princeton: Princeton University Press.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Bloch, M. 1953. \emph{The Historian's Craft}. Trans. P. Putnam. New York: Knopf.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Baines, J., J. Germann, S. Rolf and S. Starrs. 2026. Which side are you on? Geoeconomic coercion and German corporate networks in the US--China rivalry. \emph{Review of International Political Economy} 33(5): 1919--1957.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Beaumier, G. and M. Cartwright. 2024. Cross-network weaponization in the semiconductor supply chain. \emph{International Studies Quarterly} 68(1): sqae003.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Ben-Michael, E., A. Feller and J. Rothstein. 2021. The augmented synthetic control method. \emph{Journal of the American Statistical Association} 116(536): 1789--1803.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Bown, C. P. 2020. How the United States marched the semiconductor industry into its trade war with China. \emph{East Asian Economic Review} 24(4): 349--388.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Callaway, B. and P. H. C. Sant'Anna. 2021. Difference-in-differences with multiple time periods. \emph{Journal of Econometrics} 225(2): 200--230.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Chen, L. and M. M. Evers. 2023. ``Wars without gun smoke'': global supply chains, power transitions, and economic statecraft. \emph{International Security} 48(2): 164--204.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Chernozhukov, V., K. Wüthrich and Y. Zhu. 2021. An exact and robust conformal inference method for counterfactual and synthetic controls. \emph{Journal of the American Statistical Association} 116(536): 1849--1864.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Crosignani, M., L. Han, M. Macchiavelli and A. F. Silva. 2026. Securing technological leadership? The cost of export controls on firms. \emph{Journal of Financial Economics} 175. (Federal Reserve Bank of New York Staff Report 1096, April 2024, rev. February 2025.)
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Drezner, D. W. 1999. \emph{The Sanctions Paradox}. Cambridge: Cambridge University Press.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Drezner, D. W., H. Farrell and A. L. Newman, eds.~2021. \emph{The Uses and Abuses of Weaponized Interdependence}. Washington: Brookings Institution Press.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Farrell, H. and A. L. Newman. 2019. Weaponized interdependence: how global economic networks shape state coercion. \emph{International Security} 44(1): 42--79.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Gereffi, G., J. Humphrey and T. Sturgeon. 2005. The governance of global value chains. \emph{Review of International Political Economy} 12(1): 78--104.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Hynek, N. 2026. Beyond weaponized interdependence: the corporate chokehold in frontier semiconductor governance. \emph{Review of International Political Economy}, published online 20 August 2026.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Financial Times. 2025. SMIC tests domestically made immersion lithography tool. September.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Hirschman, A. O. 1945. \emph{National Power and the Structure of Foreign Trade}. Berkeley: University of California Press.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Hufbauer, G. C., J. J. Schott and K. A. Elliott. 1990. \emph{Economic Sanctions Reconsidered}, 2nd ed.~Washington: Institute for International Economics.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Jeremy, D. J. 1981. \emph{Transatlantic Industrial Revolution: The Diffusion of Textile Technologies between Britain and America, 1790--1830s}. Cambridge, MA: MIT Press.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Lind, J. and M. Mastanduno. 2025. Hard then, harder now: CoCom's lessons and the challenge of crafting effective export controls against China. \emph{Texas National Security Review} 8(4): 8--33.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  List, F. 1841 {[}1885{]}. \emph{The National System of Political Economy}. Trans. S. S. Lloyd. London: Longmans.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Malkin, A. and T. He. 2024. The geoeconomics of global semiconductor value chains: extraterritoriality and the US--China technology rivalry. \emph{Review of International Political Economy} 31(2): 674--699.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Mastanduno, M. 1992. \emph{Economic Containment: CoCom and the Politics of East--West Trade}. Ithaca: Cornell University Press.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Morgenstern, O. 1950. \emph{On the Accuracy of Economic Observations}. Princeton: Princeton University Press.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Mulder, N. 2022. \emph{The Economic Weapon: The Rise of Sanctions as a Tool of Modern War}. New Haven: Yale University Press.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Naughton, B. 2021. \emph{The Rise of China's Industrial Policy, 1978 to 2020}. Mexico City: Universidad Nacional Autónoma de México.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Nicholas, T. 2019. \emph{VC: An American History}. Cambridge, MA: Harvard University Press.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Miller, C. 2022. \emph{Chip War: The Fight for the World's Most Critical Technology}. New York: Scribner.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Pape, R. A. 1997. Why economic sanctions do not work. \emph{International Security} 22(2): 90--136.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Rambachan, A. and J. Roth. 2023. A more credible approach to parallel trends. \emph{Review of Economic Studies} 90(5): 2555--2591.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Tom's Hardware. 2026. Chinese chipmaking tool roadmaps examined: DUV production at five machines a year, and an EUV prototype with no chips. July.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Stantchev, S. K. 2014. \emph{Spiritual Rationality: Papal Embargo as Cultural Practice}. Oxford: Oxford University Press.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Romano, J. P. and M. Wolf. 2005. Stepwise multiple testing as formalized data snooping. \emph{Econometrica} 73(4): 1237--1282.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Cai, M. and J. Xie. 2026. Export restrictions and the rise of basic research: how chip controls influence Chinese firms' research orientation. \emph{International Journal of Operations \& Production Management} 46(1): 124--144.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  He, H., P. Chen, X. Huang and L. Li. 2025. The influence of the U.S. export controls against China on the resilience of Chinese corporates. \emph{PLOS One} 20(9): e0331222.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Hu, H., S. Yang, L. Zeng and X. Zhang. 2024. U.S.--China trade conflicts and R\&D investment: evidence from the BIS entity lists. \emph{Humanities and Social Sciences Communications} 11: 829.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Juhász, R., N. Lane and D. Rodrik. 2024. The new economics of industrial policy. \emph{Annual Review of Economics} 16: 213--242.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  KSE Institute. 2024. \emph{Challenges of Export Controls Enforcement: How Russia Continues to Import Components for Its Military Production}. Kyiv School of Economics, January.
+\par\noindent\hangindent=1.5em\hangafter=1 
+  Bown, C. P. and D. Wang. 2024. Semiconductors and modern industrial policy. \emph{Journal of Economic Perspectives} 38(4).
+
+
+\endgroup
+\appendix\renewcommand{\thefigure}{A\arabic{figure}}\setcounter{figure}{0}\renewcommand{\thetable}{A\arabic{table}}\setcounter{table}{0}
+\clearpage\section{Data dictionary and value-chain taxonomy}
+\noindent Table A1 lists the crosswalks released with the package; the trade baskets, control dates and extraction rules follow.
+
+
+
+\begin{table}[htbp]\centering\footnotesize\setstretch{1.05}\caption*{\textbf{Table A1. Crosswalks released with the package}}\begin{tabular}{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.26}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.74}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Crosswalk
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Content
+\end{minipage} \\
+\midrule
+HS8 ↔ tool category & lithography 84862031 (steppers), 84862039 (other, incl.~immersion); CVD 84862021; other deposition 84862029; PVD 84862022; dry etch 84862041; wet etch/strip 84862049; furnaces 84862010; implanters 84862050; 84862090 mixed, excluded \\
+\hdashline
+Trade baskets, v2 (HS6; used in §5.1 and Figure 5) & fab tools: 848610/20/40/90 + 903082/903141; semiconductors: 8541 excluding photovoltaic lines (854140; HS22 854141--149) + all of 8542; network: 851761/62; servers and storage: 847141/49/50/70; consumer: 851712/13 + 847130 + 852872. The network, server and consumer baskets were re-specified in October 2026 (v2); the earlier BACI-only results used a prior specification and are retired. Allies-11: Japan, Korea, Taiwan, Netherlands, Germany, United Kingdom, France, Italy, Canada, Australia, Singapore. Pre 2019--21, post 2023--24 (China-reported 2025 not yet available). \\
+\hdashline
+Firm ↔ process segment & etch, deposition, cleaning, track, back-end test, display metrology, foundry, memory \\
+\hdashline
+Control entry ↔ tool type & US rules of 7 Oct 2022, 17 Oct 2023 and 2 Dec 2024; Dutch regulation of 30 Jun 2023 (Stcrt. 2023 no. 18212, in force 1 Sep 2023) and Regulation BZ2404162 (in force 7 Sep 2024); Japanese METI order in force 23 Jul 2023 (23 categories); VEU revocation 90 FR 42321 (announced 29 Aug 2025, in force 31 Dec 2025) \\
+\hdashline
+Extraction rules & machine extraction from original filings, values as first reported in each year's report; cumulative-to-quarterly recomputation flagged; annual-average currency conversion (CNY, KRW, JPY, EUR); baskets and donor sets held fixed within each run (v2 baskets re-specified once, in October 2026) \\
+\hdashline
+Donor and peer sets & quarterly panel: 15 foreign suppliers with complete 2017Q1--2025Q4 data (Applied Materials, KLA, Teradyne, Axcelis, Advanced Energy, Entegris, FormFactor, Ichor, Kulicke \& Soffa, MKS, Onto, Eugene Technology, Jusung, TES, Wonik IPS); annual panel: 26 foreign suppliers with complete 2016--2025 data (the eleven SEC registrants above plus ASML, Camtek and Nova; Tokyo Electron, SCREEN, Lasertec, DISCO, Advantest, Tokyo Seimitsu, ULVAC and JEOL; and the four Korean firms); compliance tests: AMAT, KLA, Lam, Tokyo Electron, SCREEN (listed) and DISCO, ULVAC \\
+\bottomrule
+\end{tabular}\end{table}
+
+
+\FloatBarrier\Needspace*{8\baselineskip}
+\section{Methods battery and bounds (feed)}
+
+
+\begin{table}[htbp]\centering\footnotesize\setstretch{1.05}\caption*{\textbf{Table B1. Feed estimates by estimator and counterfactual (quarterly panel 2017Q1--2025Q4, 36 quarters, AMEC 28; 15 donors; log points unless noted; placebo rank in parentheses)}}\begin{tabular}{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Unit
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+SDID\newline vs peers
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ASCM\newline vs peers
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ASCM\newline vs own trend
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Annual SDID, 26 donors
+\end{minipage} \\
+\midrule
+NAURA & +0.96 (1/16) & +0.66 (1/16) & +0.27 (5/16) & +91\% (1/27) \\
+\hdashline
+AMEC & +0.80 (1/16) & +0.78 (1/16) & +0.11 (7/16) & +80\% (1/27) \\
+\hdashline
+ACM Research & +0.94 (1/16) & +0.41 (2/16) & −0.23 (14/16) & +68\% (1/27) \\
+\hdashline
+Three-firm aggregate & +0.85 (1/16) & +0.49 (1/16) & −0.03 (8/16) & +116\% (1/27) \\
+\bottomrule
+\end{tabular}\end{table}
+
+
+Quarterly SDID and ASCM values and ranks are from the clean re-run of 25 October 2026 (15 donors with complete quarterly data, seasonally adjusted; the three-firm aggregate is the mean of the three firms' log series; the same run produces the 112 specifications of Figure 4); the annual SDID uses a wider panel of 26 foreign suppliers with complete annual data for 2016--2025 (14 SEC or EU registrants including ASML, 8 Japanese and 4 Korean firms), re-run on 25 October 2026, with ranks among 27 placebo paths. Conformal inference on the same panel (Chernozhukov, Wüthrich and Zhu 2021; cyclic moving-block permutation of the augmented-synthetic-control residuals, 36 quarters, 13 post-treatment) gives p = 0.054 for the aggregate, NAURA and ACM Research (second of 37 block positions, against a floor of 0.027) and 0.069 for AMEC (second of 29, with 28 quarters).
+
+Seven-estimator battery against peers, seasonally adjusted (SDID; synthetic control; ridge-augmented SC with penalty 1; a two-factor interactive-fixed-effects generalized SC; nuclear-norm matrix completion by soft-impute; BJS imputation from a two-way fixed-effects fit on untreated cells; two-way fixed effects --- compact implementations in spec\_curve\_rerun.py): NAURA +0.13 to +1.39, AMEC +0.61 to +0.93, ACM Research −0.35 to +1.51 log points; the generalized synthetic control is the most conservative estimator throughout. Year-by-year gaps over the ridge-augmented synthetic control (means of the quarterly gaps in Appendix Figure A2), 2023/2024/2025: aggregate +0.28/+0.46/+0.71, NAURA +0.52/+0.64/+0.94, AMEC +0.50/+0.77/+1.20, ACM Research +0.25/+0.48/+0.58. From the archived run of 8 October 2026: Honest DiD (Rambachan--Roth) breakdown value M̄ ≈ 0 for the aggregate and 0.4--0.8 for AMEC; a placebo treatment dated to 2020 gives +121 percent against peers.
+
+\begin{figure}[htbp]\centering\includegraphics[width=0.84\textwidth]{figures_v2/figA3_estimators.pdf}\caption{Feed estimates by estimator and counterfactual (left) and the gap over foreign peers by year, 2023–25 (right). SDID and ASCM values from the clean re-run of 25 October 2026; year-by-year gaps are means of the quarterly gaps in Appendix Figure A2 (change 2024→2025: aggregate +0.24, rank 2 of 16; NAURA +0.30, rank 2; AMEC +0.42, rank 1; ACM Research +0.10, rank 4).}\label{fig:AA1}\end{figure}
+
+\begin{figure}[htbp]\centering\includegraphics[width=0.84\textwidth]{figures_v2/figA5_feed_dynamics.pdf}\caption{Quarterly revenue gap (log points, seasonally adjusted) of each Chinese toolmaker over its ridge-augmented synthetic control of 15 foreign suppliers, 2022Q4–2025Q4; the three-firm aggregate is the mean of the three log series; band: 5th–95th percentile of the 15 placebo paths (each donor treated in turn, full 2017Q1–2022Q3 pre-period; AMEC is fitted on its own 2019Q1–2022Q3 pre-period); pink: December 2024 designations. End-of-path values are the 2025Q4 gaps.}\label{fig:AA2}\end{figure}
+
+
+\FloatBarrier\Needspace*{8\baselineskip}
+\section{Randomization and Romano--Wolf}
+
+
+\begin{table}[H]\centering\footnotesize\setstretch{1.05}\caption*{\textbf{Table C1. Trade-flow tests}}\begin{tabular}{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Test
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule
+Ladder tests, v2 baskets, three sources (BACI; China-reported; importer-reported), RI with 40 destinations / 100 placebo alliances & US: servers r1/40 (BACI and importer-reported), r11 (China-reported); allies: one-sided p ≤ .05 for four of five baskets in BACI (fab tools .08), .07--.20 China-reported, \textgreater{} .2 importer-reported \\
+\hdashline
+Allied-group sensitivity (JP+NL only; JP+NL+KR+TW+DE; allies-11 less Singapore and Taiwan), same tests & smallest Romano--Wolf p 0.10--0.31 (BACI), 0.13--0.29 (China-reported), 0.32--0.62 (importer-reported): the eleven-country group is the definition most favourable to finding an allied effect \\
+\hdashline
+Romano--Wolf step-down across five products & US: smallest adjusted p = 0.34 (any source); allies: 0.079 (BACI), 0.069 (China-reported), ≥ 0.37 (importer-reported) \\
+\hdashline
+Mirror gap, HS 847150 China→US & China-reported 1.11 → 1.16 bn (2019→2024); US-reported 1.37 → 0.56 \\
+\hdashline
+HS8 shape tests, controlled (84862039/21/41/29) vs uncontrolled (84862010/22/31/50/49) lines, allied origin; statistics are means of line-level measures, p from all 126 assignments of four lines among nine & level 2023--25 vs 2019--21 +0.28, p = 0.51; volatility of monthly log changes after October 2022 +0.20, p = 0.63; normalization 2025 vs 2024 +0.03, p = 0.94 (re-run 25 October 2026) \\
+\hdashline
+Fisher combination (cut-off .033, lifted .033, feed .063) & 0.004 (independent); ≈0.03 (ρ = 0.4) \\
+\bottomrule
+\end{tabular}\end{table}
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=0.7\textwidth]{figures_v2/figA1_hs8_lines.pdf}\caption{China's imports of controlled (84862039 other lithography, 84862021 CVD, 84862041 dry etch, 84862029 other deposition) and uncontrolled (84862010 furnaces, 84862022 PVD, 84862031 steppers, 84862050 implanters, 84862049 wet etch/strip) tool lines from the United States, Japan and the Netherlands, indexed to 2019 (log). Other deposition is a small line (0.09 bn dollars in 2019). GACC HS8; 84862090 (mixed) excluded.}\label{fig:AA3}\end{figure}
+
+
+\FloatBarrier\Needspace*{8\baselineskip}
+\section{Designation, exposure, compliance}
+
+
+\begin{table}[htbp]\centering\footnotesize\setstretch{1.05}\caption*{\textbf{Table D1. Designation and compliance tests}}\begin{tabular}{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Test
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule
+Callaway--Sant'Anna, 8 firms designated 2019--24, ATT(0--3) & −0.09 {[}−0.33, +0.22{]}, p ≈ 0.53; cohorts −0.35 / −0.18 / +0.21 \\
+\hdashline
+10-K export-control mentions per 10,000 words & 0 (pre-2022) → 1--3.6 (2022--25); correlation with China share 0.20 \\
+\hdashline
+China share on stated exposure (10 vendors) & slope −0.80, p = 0.37 \\
+\hdashline
+Compliance signature, 7 vendors, 21 assignments: level (2023--25 vs 2019--21) & +3.2 pp, p = 0.429 \\
+\hdashline
+\ldots volatility after 2022 & +7.2 pp, rank 1/21, p = 0.048 \\
+\hdashline
+\ldots2025 normalization & −5.8 pp, rank 3/21, p = 0.143 \\
+\hdashline
+Japan controlled (TEL, SCREEN) vs not (DISCO, ULVAC), FY2024→FY2026 China share & −10, −1 vs −5, +3 pp; DiD ≈ −5 pp (descriptive, n = 4) \\
+\hdashline
+Last-train surge, GACC monthly, USD m & Dutch lithography (84862039): 121 a month in the 12 months before the March 2023 announcement, 708 in August 2023, 1,302 in September (the month the rule took effect; customs arrivals lag shipments), 673--1,110 through December as licensed deliveries were completed; Japanese listed categories: 365 a month in the prior year, 642 in July 2023 \\
+\bottomrule
+\end{tabular}\end{table}
+
+
+\begin{figure}[H]\centering\includegraphics[width=0.84\textwidth]{figures_v2/figA2_permutation.pdf}\caption{Permutation distribution of the compliance-cycle statistic over all 21 assignments of five "controlled" vendors among seven. Statistic: standard deviation of annual changes in China share from 2022 onward (10-K and annual securities reports; AMAT through FY2025, the others through FY2026), averaged within the controlled group minus the uncontrolled group. Firm-level values, pp: Tokyo Electron 12.9, Lam 11.3, SCREEN 11.2, KLA 10.7, Applied Materials 8.6 versus DISCO 4.6 and ULVAC 2.9. Actual assignment +7.2 pp, rank 1 of 21 (p = 0.048); next largest 4.4. Red: the actual assignment.}\label{fig:AA4}\end{figure}
+
+\begin{figure}[htbp]\centering\includegraphics[width=0.84\textwidth]{figures_v2/figA6_lifted.pdf}\caption{ZTE's consumer and carrier segment revenue, USD bn at annual average rates, 2015–2025 (left; ZTE annual reports: consumer 35.2 → 15.0 → 33.8 bn yuan and carrier 63.8 → 66.6 → 62.9 bn yuan in 2017, 2019 and 2025) and synthetic difference-in-differences effects against 29 listed peers, pre-period 2015–17, post-period 2019–23, with ranks among 30 placebo paths (right); clean run of 9 October 2026.}\label{fig:AA5}\end{figure}
+
+\begin{figure}[htbp]\centering\includegraphics[width=0.84\textwidth]{figures_v2/figA7_origin.pdf}\caption{China's dry-etch tool imports (HS 84862041) by origin: shares (left) and values (right), 2019–2026 (2026 January–August). United States–origin share 43.4 → 5.0 percent and Singapore-plus-Malaysia 12.5 → 42.8 percent, 2019 → 2025; Japan peaked at 40.9 percent in 2024. Customs data record the country of origin, not the shipper; the main etch plants in Singapore and Malaysia belong to Applied Materials and Lam Research. GACC.}\label{fig:AA6}\end{figure}
+
+
+\FloatBarrier\Needspace*{8\baselineskip}
+\section{State capital and the memory makers}
+
+
+\begin{table}[H]\centering\footnotesize\setstretch{1.05}\caption*{\textbf{Table E1. Shareholders and finances from the 2026 prospectuses (CNY bn unless noted)}}\begin{tabular}{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+YMTC (Changcun Holdings, SSE filing 002251)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CXMT (Changxin Technology)
+\end{minipage} \\
+\midrule
+Largest state-linked holders & Hubei Changsheng 26.54\%; Xinfei Technology 25.35\%; National IC Fund I 11.97\%; Fund II 11.38\%; Optics Valley Industrial Investment 9.25\%; Hubei Guoxin fund 5.90\%; Changjiang Industry Group 2.53\% (pre-IPO register, filing of 21 August 2026) & Qinghui Jidian 21.67\% and Changxin Jicheng 11.71\% (Hefei state investment system); National IC Fund II 8.73\%; Hefei Jixin 8.37\%; Anhui Provincial Investment 7.91\% (pre-IPO register, prospectus of May 2026) \\
+\hdashline
+State-linked total & top four 75.2\%; \textgreater{} 90\% with the provincial vehicles & ≈ 54\% (Hefei state capital ≈ 37\%) \\
+\hdashline
+Revenue & 18.7 (2023) → 45.2 (2024) → 63.2 (2025); 47.0 in 1Q 2026 alone & 9.1 (2023) → 24.2 → 61.8 (2025); 50.8 in 1Q 2026 alone \\
+\hdashline
+Net income attributable & −19.2 (2023) → +6.8 (2024) → +14.2 (2025) → +33.4 (1Q 2026) & −16.3 (2023) → −7.1 (2024) → +1.9 (2025) → +24.8 (1Q 2026) \\
+\hdashline
+Weighted ROE & −27.7\% (2023), 8.2\%, 15.1\%, 28.0\% (1Q 2026) & --- \\
+\hdashline
+R\&D / revenue & 23.0\% → 9.5\% → 8.8\% → 3.75\% & --- \\
+\bottomrule
+\end{tabular}\end{table}
+
+
+\begin{figure}[H]\centering\includegraphics[width=0.7\textwidth]{figures_v2/figA4_memory_state.pdf}\caption{The memory makers: revenue 2023–1Q 2026 in CNY bn (prospectus values; 1Q 2026 is the quarter alone), attributable net income of both firms and YMTC weighted return on equity (left); state-linked shareholders from the pre-IPO registers (YMTC filing of 21 August 2026; CXMT prospectus of 27 May 2026) (right). Top four YMTC holders 75.2 percent; CXMT state-owned holders about 54 percent.}\label{fig:AA7}\end{figure}
+
+
+\FloatBarrier\Needspace*{8\baselineskip}
+\section{Audit log and retired values}
+
+
+\begin{table}[H]\scriptsize\centering\footnotesize\setstretch{1.05}\caption*{\textbf{Table F1. Corrections (four audit rounds)}}\begin{tabular}{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.30}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.46}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.24}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Finding
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Correction
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Effect on conclusions
+\end{minipage} \\
+\midrule
+EDGAR fiscal-year-end quarters missing & donors 12 → 15 & none \\
+\hdashline
+Kingsemi 2020Q3 cumulative figure in quarterly series & recomputed & none \\
+\hdashline
+ASML three annual tables failed to parse & re-parsed from PDF & none \\
+\hdashline
+Kingsemi 2020Q4 not recomputed & replaced from annual report & none \\
+\hdashline
+Placeholder correlation 0.38 in draft & computed value 0.20 & none \\
+\hdashline
+Inspur unit error → designation ATT −0.73 & −0.09, n.s. & designation conclusion reversed \\
+\hdashline
+Fourth round (25 October 2026): memory-maker revenues read in hundred-million yuan as billions; shareholder tables taken from subsidiary-level or earlier capital tables & YMTC 18.7/45.2/63.2 bn, CXMT 9.1/24.2/61.8 bn; pre-IPO registers of the 2026 prospectuses (Appendix E) & none; state share larger than first reported \\
+\hdashline
+Huawei 2024 regional revenue missing; peer set described as twelve firms; annual panel ``27 donors'' & 2024 added (total 862,072 m yuan); fifteen peers (Appendix A); 26 donors & none \\
+\hdashline
+ASCM, specification-curve and annual-SDID values from the 7 October battery & one script (spec\_curve\_rerun.py): ASCM 0.66/0.78/0.41/0.49, curve +138\%/93\% and +16\%/73\%, aggregate annual SDID +116\% & none \\
+\hdashline
+Trade-ladder details (server rank, allied p-values, sensitivity range) and HS8 shape-test definitions & rank 11; four of five baskets; 0.10--0.31; line-level means, p = 0.51/0.63/0.94 & none \\
+\hdashline
+Netherlands--Japan last-train DiD not reproducible; ZTE quarter stated as deviation from trend; Japanese fiscal-year points plotted at fiscal-year start & monthly customs values (121 → 708 → 1,302 m\$; 365 → 642); year-on-year −58\%; fiscal mid-year & none \\
+\bottomrule
+\end{tabular}\end{table}
+
+
+\textbf{Table F2. Retired values (never to be used)}: CXMT shareholder shares 26.99/15.24/31.72 percent and YMTC shares 28.56/12.88/12.24/9.96 percent (earlier capital tables; replaced by the pre-IPO registers of the 2026 prospectuses); NAURA +306/+215\% (simple SDID); base-station −41\% single value; allied semiconductor −29\% (basket with photovoltaics); pre-trend multipliers 4.2/12.4/8.1/361 (old basket); CXMT press loss figures; Gartner-based joint p ≈ 0.018; CS ATT −0.73; government-subsidy ratios of 8 Oct 2026 (table misidentification); memory-maker revenues 187/452/632 and 91/242/618 ``bn'' (hundred-million yuan misread as billions); ASCM 0.73/0.78/0.62/0.68 and own-trend 0.23/0.16 (7 October battery); specification-curve +122\%/98\% and +11\%/75\%; annual-SDID aggregate +56\% (2/27) and ``27 donors''; dynamic NAURA +0.40/+0.58/+0.91; Netherlands--Japan last-train DiD +49\% (p = 0.18) and Dutch pre-announcement average 200 m\(; HS8 shape p = 0.63/0.30; exposure p = 0.31; Japan compliance DiD −8 pp; China-reported server rank 13; ZTE −59% versus trend. Clean re-run of 9 October 2026 superseded earlier values for the Huawei group effect (−39% → −42%, 29 donors), the ZTE segment effects (−52%/+2% → −47%/+1%), the quarterly SDID (percent values → log points, all rank 1/16), the compliance level statistic (+4.6 → +3.2 pp), the Huawei dollar figures (replaced by CNY from the annual reports), the etch origin shares (29→5 / 12→31 → 43→5 / 13→43), the lithography unit values (17→47 → 20→37→51 M
+\)) and the 2026 Dutch-origin change (−32\% annualized → −5\% January--August). The re-run of 25 October 2026 superseded the remaining battery values (Appendix B) and the memory-maker figures (Appendix E). The rule-versus-tariff appendix was withdrawn pending re-verification of a sign conflict between two archived runs.
+
+
+\end{document}

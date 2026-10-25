@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "title": "Where Export Controls Bind: Law and Lead in the Semiconductor Supply Chain, 2018–2026 — replication package v1",
+    "upload_type": "dataset",
+    "publication_date": "2026-10-25",
+    "creators": [
+      {
+        "name": "Kyung, Heekwon",
+        "affiliation": "Korea Institute for Industrial Economics and Trade (KIET)"
+      },
+      {
+        "name": "Kim, Sanghoon",
+        "affiliation": "Korea Institute for Industrial Economics and Trade (KIET)"
+      }
+    ],
+    "description": "Replication package for the working paper 'Where Export Controls Bind: Law and Lead in the Semiconductor Supply Chain, 2018–2026' (Kyung and Kim, 2026). Contains the manuscript (Markdown, LaTeX source and generator, PDF), one script per figure with PNG/PDF/CSV outputs, analysis code (synthetic difference-in-differences, ridge-augmented synthetic control, conformal block permutation, compliance permutation tests, three-source ladder tests with Romano–Wolf correction), processed panels built from public filings (SEC EDGAR, EDINET, OpenDART, cninfo), Huawei and ZTE annual reports, YMTC and CXMT STAR Market prospectuses, China customs HS8 imports by origin, BACI and UN Comtrade bilateral trade, and a canonical registry tracing every number in the paper to its source and status. Large third-party originals (BACI, UN Comtrade parquet, annual-report PDFs) are not redistributed; their public locations and build steps are documented in README.md and data/RAW_SOURCES.md.",
+    "access_right": "open",
+    "license": "cc-by-4.0",
+    "keywords": [
+      "export controls",
+      "economic statecraft",
+      "weaponized interdependence",
+      "semiconductors",
+      "China",
+      "global value chains",
+      "synthetic control",
+      "replication"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/hee880718/wecb-replication",
+        "relation": "isSupplementTo",
+        "resource_type": "software"
+      }
+    ],
+    "language": "eng",
+    "version": "1.0"
+  }
+}

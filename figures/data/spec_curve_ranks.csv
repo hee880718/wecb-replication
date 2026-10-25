@@ -1,0 +1,13 @@
+counterfactual,unit,estimator,tau,rank,n_paths
+peers,EQUIP3,ASCM,0.495,1,16
+peers,EQUIP3,SDID,0.847,1,16
+peers,NAURA,ASCM,0.66,1,16
+peers,NAURA,SDID,0.957,1,16
+peers,AMEC,ASCM,0.783,1,16
+peers,AMEC,SDID,0.797,1,16
+peers,ACMR,ASCM,0.415,2,16
+peers,ACMR,SDID,0.935,1,16
+own trend,EQUIP3,ASCM,-0.026,8,16
+own trend,NAURA,ASCM,0.274,5,16
+own trend,AMEC,ASCM,0.105,7,16
+own trend,ACMR,ASCM,-0.231,14,16

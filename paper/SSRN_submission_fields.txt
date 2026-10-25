@@ -1,0 +1,20 @@
+TITLE
+Where Export Controls Bind: Law and Lead in the Semiconductor Supply Chain, 2018–2026
+
+AUTHORS
+1. Heekwon Kyung — Korea Institute for Industrial Economics and Trade (KIET), Research Fellow — hee0718@kiet.re.kr — +82-44-287-3288 (corresponding)
+2. Sanghoon Kim — Korea Institute for Industrial Economics and Trade (KIET), Senior Research Fellow — sanghoon_kim@kiet.re.kr — +82-44-287-3181
+
+DATE WRITTEN: October 21, 2026
+
+ABSTRACT: (paste the Abstract section of the paper verbatim)
+
+KEYWORDS: export controls; economic statecraft; weaponized interdependence; semiconductors; China; supply chains; global value chains
+
+JEL: F13, F51, F52, L63, O33, O38
+
+SUGGESTED SSRN NETWORKS / eJOURNALS: International Political Economy; Political Economy: International Political Economy; International Trade; Economic Sanctions; Industrial Organization; Innovation
+
+DATA & CODE: replication package (GitHub repository / Zenodo DOI — insert when created)
+
+NOTE TO EDITORS: Working paper, version 1. Under review consideration for a journal; preprint posting permitted by the target journal's policy.

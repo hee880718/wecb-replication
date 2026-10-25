@@ -1,0 +1,568 @@
+URL: https://canalys.com/newsroom/global-smartphone-shipment-Q4-2020
+TRACKER: Canalys
+
+Informa
+TechTarget and Informa Tech’s Digital Business Combine
+Expanded Scale and Leadership in B2B: From R&D to ROI
+
+With a combined permissioned audience of 50+ million professionals, TechTarget and Informa Tech’s digital businesses have come together to offer industry-leading, global solutions that enable vendors in enterprise technology and other key industry markets to accelerate their revenue growth at scale.
+
+AI-capable PCs: current market trends, future opportunities and potential challenges   Get your complimentary report! 
+
+About 
+Our analysis 
+Events
+Newsroom
+Resources
+Blogs
+AI Insights
+Log in
+Contact
+Back to newsroom
+Worldwide smartphone shipments Q4 2020 and full year 2020
+
+Shanghai (China), Bengaluru (India), Singapore, Reading (UK) and Portland (US) – {Thursday, 28 January 2021}
+
+Apple takes global smartphone top spot as iPhone 12 demand surges in Q4 2020
+
+In Q4 2020, worldwide smartphone shipments reached 359.6 million units, a small decline of 2% year-on-year. Apple shipped its most iPhones ever in a single quarter, at 81.8 million units, up 4% against the previous year. Samsung took second place, shipping 62.0 million units for a -12% decline. Xiaomi, Oppo and Vivo completed the top five, with each seeing share gains from a beleaguered Huawei (including Honor). Xiaomi grew 31% to 43.4 million units, Oppo grew 15% to 34.7 million units, while Vivo shipped 32.1 million units for 14% growth. Huawei (including Honor) came in sixth place in Q4 2020 with 32.0 million smartphones shipped. It marks the first time in six years that it fell outside the global top five smartphone vendors. For the full year of 2020, Samsung maintained the global leader position, with 20% global market share, Apple came in second place and Huawei (including Honor) remained at top three.
+
+“The iPhone 12 is a hit,” said Canalys Analyst Vincent Thielke. “Apple is better positioned than its competitors on 5G, being heavily skewed towards developed markets, and mobile operator sales channels. But it also made savvy moves behind the scenes to propel its sales and profitability. The omission of a power plug from the iPhone retail box, which reduces weight and size, is making logistics significantly more efficient, amid the ongoing high cost of air freight due to the pandemic. And it also implemented channel-centric growth initiatives to target SMB customers, which have bolstered demand for its entire range of iPhones.”
+
+“Huawei dramatically receded in most markets as the result of the US sanctions,” said Canalys Research Analyst Amber Liu. “Its decision to divest Honor, however, may prove vital, as Honor is not bound by the same restrictions and component supply is resuming. Despite this, Honor has a colossal challenge ahead. It needs to redefine the brand, from young demographics to address both premium and mass market. It needs to extend its product range to compare to the breadth of Huawei. And most importantly, it needs to re-enter channels which are already signing multi-year ranging deals with competitors. For example, in critical channels like European network operators, the vendor onboarding process can take more than six months. For this reason, Honor is not expected to take substantial market share back in the near-term.”
+
+“The second wave of COVID-19 has taken a huge toll, but unlike the first wave, the industry was braced for impact,” said Canalys Senior Analyst Ben Stanton. “Online fulfillment capacity has already been scaled, vendors are experienced at virtual launch events, and important channel meetings, such as device range reviews, are now comfortably done in a virtual setting. And in some instances, smartphones are even being purchased to assist with working-from-home and remote learning. The introduction of COVID-19 vaccines is also boosting business confidence for 2021, allowing them to plan and invest. Going forwards, there will be obvious economic ripple effects as government stimulus fades, and there are ongoing concerns around new virus strains. Overall though, sentiment in the industry is positive, and 2021 will see the smartphone market rebound after a 7% decline in 2020.”
+
+ 
+ 
+
+Worldwide smartphone shipments and growth
+
+Canalys Smartphone Market Pulse: Q4 2020
+
+
+
+
+Vendor
+
+	
+
+Q4 2020 shipments (million)
+
+	
+
+Q4 2020
+
+Market share
+
+	
+
+Q4 2019 shipments (million)
+
+	
+
+Q4 2019
+
+Market share
+
+	
+
+Annual
+growth
+
+
+
+
+Apple 
+
+	
+
+81.8
+
+	
+
+23%
+
+	
+
+78.4
+
+	
+
+21%
+
+	
+
++4%
+
+
+
+
+Samsung
+
+	
+
+62.0
+
+	
+
+17%
+
+	
+
+70.8
+
+	
+
+19%
+
+	
+
+-12%
+
+
+
+
+Xiaomi
+
+	
+
+43.4
+
+	
+
+12%
+
+	
+
+33.0
+
+	
+
+9%
+
+	
+
++31%
+
+
+
+
+Oppo
+
+	
+
+34.7
+
+	
+
+10%
+
+	
+
+30.3
+
+	
+
+8%
+
+	
+
++15%
+
+
+
+
+Vivo
+
+	
+
+32.1
+
+	
+
+9%
+
+	
+
+28.2
+
+	
+
+8%
+
+	
+
++14%
+
+
+
+
+Others
+
+	
+
+105.5
+
+	
+
+29%
+
+	
+
+128.0
+
+	
+
+35%
+
+	
+
+ -18% 
+
+
+
+
+Total 
+
+	
+
+359.6
+
+	
+
+100.0%
+
+	
+
+368.6
+
+	
+
+100.0%
+
+	
+
+-2% 
+
+
+
+
+Note: percentages may not add up to 100% due to rounding
+
+Source: Canalys estimates (sell-in shipments), Smartphone Analysis, January 2021
+
+ 
+
+Worldwide smartphone shipments and growth
+
+Canalys Smartphone Market Pulse: Full-year 2020
+
+
+
+
+Vendor
+
+	
+
+2020 shipments (million)
+
+	
+
+2020
+
+Market share
+
+	
+
+2019 shipments (million)
+
+	
+
+2019
+
+Market share
+
+	
+
+Annual
+growth
+
+
+
+
+Samsung 
+
+	
+
+255.6
+
+	
+
+20%
+
+	
+
+298.0
+
+	
+
+22%
+
+	
+
+-14%
+
+
+
+
+Apple
+
+	
+
+207.1
+
+	
+
+16%
+
+	
+
+198.1
+
+	
+
+14%
+
+	
+
++5%
+
+
+
+
+Huawei (incl. Honor)
+
+	
+
+188.5
+
+	
+
+15%
+
+	
+
+240.6
+
+	
+
+18%
+
+	
+
+-22%
+
+
+
+
+Xiaomi
+
+	
+
+149.6
+
+	
+
+12%
+
+	
+
+125.5
+
+	
+
+9%
+
+	
+
++19%
+
+
+
+
+Oppo
+
+	
+
+115.1
+
+	
+
+9%
+
+	
+
+120.2
+
+	
+
+9%
+
+	
+
+-4%
+
+
+
+
+Others
+
+	
+
+348.9
+
+	
+
+28%
+
+	
+
+384.3
+
+	
+
+28%
+
+	
+
+ -9% 
+
+
+
+
+Total 
+
+	
+
+1,264.7
+
+	
+
+100.0%
+
+	
+
+1,366.7
+
+	
+
+100.0%
+
+	
+
+-7% 
+
+
+
+
+Note: percentages may not add up to 100% due to rounding
+
+Source: Canalys estimates (sell-in shipments), Smartphone Analysis, January 2021
+
+For more information, please contact:
+
+Canalys China
+Nicole Peng: nicole_peng@canalys.com +86 150 2186 8330
+Amber Liu: amber_liu@canalys.com +86 136 2177 7745
+
+Canalys India
+Rushabh Doshi: rushabh_doshi@canalys.com +91 99728 54174
+Sanyam Chaurasia: sanyam_chaurasia@canalys.com +91 89820 33054
+
+Canalys Singapore
+Shengtao Jin: shengtao_jin@canalys.com +65 6657 9303
+Ishan Dutt: ishan_dutt@canalys.com +65 8399 0487 
+
+
+
+Canalys UK
+Ben Stanton: ben_stanton@canalys.com +44 7824 114 350
+Mo Jia: mo_jia@canalys.com +33 785 683 766
+
+Canalys USA
+Marcy Ryan: marcy_ryan@canalys.com +1 650 862 4299
+Vincent Thielke: vincent_thielke@canalys.com +1 650 644 9970 
+
+About Canalys
+
+Canalys is an independent analyst company that strives to guide clients on the future of the technology industry and to think beyond the business models of the past. We deliver smart market insights to IT, channel and service provider professionals around the world. We stake our reputation on the quality of our data, our innovative use of technology and our high level of customer service.
+
+Receiving updates
+
+To receive media alerts directly, or for more information about our events, services or custom research and consulting capabilities, please contact us. Alternatively, you can email press@canalys.com.
+
+ 
+
+Please click here to unsubscribe
+
+ 
+
+Copyright © Canalys 2020. All rights reserved.
+
+ 
+
+PDF download
+
+Worldwide smartphone shipments Q4 2020 and full year 2020
+Now and next for AI-capable PCs
+Revolutionizing computing: AI PCs and the market outlook
+
+Get your complimentary report
+You may be interested in
+
+ 
+
+Receiving updates
+
+To receive media alerts directly, or for more information about our events, services or custom research and consulting capabilities, please contact us. Alternatively, you can email press@canalys.com.
+
+Contact
+275 Grove St. Newton
+MA 02466
+USA
+
+
+
+Locations
+
+Singapore - SG
+Bengaluru - IN
+Portland - US
+Reading - UK
+Shanghai - CH
+
+Company
+
+Our story
+Meet us
+Careers
+Our offices
+Canalys Client login
+
+Our analysis
+
+Analysis
+Custom Solutions
+Partner assessment
+Partner community
+Events
+
+This website is owned and operated by Informa TechTarget, part of a global network that informs, influences and connects the world’s technology buyers and sellers. All copyright resides with them. Informa PLC’s registered office is 5 Howick Place, London SW1P 1WG. Registered in England and Wales. TechTarget, Inc.’s registered office is 275 Grove St. Newton, MA 02466.
+
+Copyright © 2025 TechTarget, Inc. or its subsidiaries. All rights reserved
+
+Privacy Policy
+Terms of Use
+Subscribe
+Unsubscribe
