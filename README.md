@@ -1,4 +1,8 @@
 # Where Export Controls Bind — reproducibility package v1 (2026-10-25)
+
+[![DOI](https://zenodo.org/badge/1432913073.svg)](https://doi.org/10.5281/zenodo.23636445)
+
+Archived on Zenodo: concept DOI 10.5281/zenodo.23636445 (all versions); version 1.0 DOI 10.5281/zenodo.23636446. Cite as: Kyung, H. and S. Kim (2026). Where Export Controls Bind — replication package v1.0. Zenodo. https://doi.org/10.5281/zenodo.23636446
 Kyung & Kim, KIET. Every number and figure in `paper/WP_WhereExportControlsBind_v8.md` can be re-derived from this package.
 
 ## Layout
