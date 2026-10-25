@@ -15,6 +15,6 @@ JEL: F13, F51, F52, L63, O33, O38
 
 SUGGESTED SSRN NETWORKS / eJOURNALS: International Political Economy; Political Economy: International Political Economy; International Trade; Economic Sanctions; Industrial Organization; Innovation
 
-DATA & CODE: replication package (GitHub repository / Zenodo DOI — insert when created)
+DATA & CODE: replication package — https://doi.org/10.5281/zenodo.23636445 (concept DOI; version 1.0 = 10.5281/zenodo.23636446); mirror https://github.com/hee880718/wecb-replication
 
 NOTE TO EDITORS: Working paper, version 1. Under review consideration for a journal; preprint posting permitted by the target journal's policy.
