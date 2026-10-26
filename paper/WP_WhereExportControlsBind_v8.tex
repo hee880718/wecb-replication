@@ -385,7 +385,7 @@ Control entry ↔ tool type & US rules of 7 Oct 2022, 17 Oct 2023 and 2 Dec 2024
 \hdashline
 Extraction rules & machine extraction from original filings, values as first reported in each year's report; cumulative-to-quarterly recomputation flagged; annual-average currency conversion (CNY, KRW, JPY, EUR); baskets and donor sets held fixed within each run (v2 baskets re-specified once, in October 2026) \\
 \hdashline
-Donor and peer sets & quarterly panel: 15 foreign suppliers with complete 2017Q1--2025Q4 data (Applied Materials, KLA, Teradyne, Axcelis, Advanced Energy, Entegris, FormFactor, Ichor, Kulicke \& Soffa, MKS, Onto, Eugene Technology, Jusung, TES, Wonik IPS); annual panel: 26 foreign suppliers with complete 2016--2025 data (the eleven SEC registrants above plus ASML, Camtek and Nova; Tokyo Electron, SCREEN, Lasertec, DISCO, Advantest, Tokyo Seimitsu, ULVAC and JEOL; and the four Korean firms); compliance tests: AMAT, KLA, Lam, Tokyo Electron, SCREEN (listed) and DISCO, ULVAC \\
+Donor and peer sets & quarterly panel: 15 foreign suppliers with complete 2017Q1--2025Q4 data (Applied Materials, KLA, Teradyne, Axcelis, Advanced Energy, Entegris, FormFactor, Ichor, Kulicke \& Soffa, MKS, Onto, Eugene Technology, Jusung, TES, Wonik IPS); annual panel: 26 foreign suppliers with complete 2017--2025 data (the eleven SEC registrants above plus ASML, Camtek and Nova; Tokyo Electron, SCREEN, Lasertec, DISCO, Advantest, Tokyo Seimitsu, ULVAC and JEOL; and the four Korean firms); compliance tests: AMAT, KLA, Lam, Tokyo Electron, SCREEN (listed) and DISCO, ULVAC \\
 \bottomrule
 \end{tabular}\end{table}
 
@@ -543,10 +543,10 @@ R\&D / revenue & 23.0\% → 9.5\% → 8.8\% → 3.75\% & --- \\
 \section{Audit log and retired values}
 
 
-\begin{table}[H]\scriptsize\centering\footnotesize\setstretch{1.05}\caption*{\textbf{Table F1. Corrections (four audit rounds)}}\begin{tabular}{@{}
+\begin{table}[htbp]\scriptsize\centering\footnotesize\setstretch{1.05}\caption*{\textbf{Table F1. Corrections (four audit rounds)}}\begin{tabular}{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.30}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.46}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.24}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.53}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.17}}@{}}
 \toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 Finding
@@ -556,15 +556,7 @@ Correction
 Effect on conclusions
 \end{minipage} \\
 \midrule
-EDGAR fiscal-year-end quarters missing & donors 12 → 15 & none \\
-\hdashline
-Kingsemi 2020Q3 cumulative figure in quarterly series & recomputed & none \\
-\hdashline
-ASML three annual tables failed to parse & re-parsed from PDF & none \\
-\hdashline
-Kingsemi 2020Q4 not recomputed & replaced from annual report & none \\
-\hdashline
-Placeholder correlation 0.38 in draft & computed value 0.20 & none \\
+First three rounds (October 2026): EDGAR fiscal-year-end quarters missing; Kingsemi 2020Q3--Q4 cumulative figures; three ASML annual tables unparsed; placeholder correlation 0.38 & donors 12 → 15; quarters recomputed or replaced from the annual report; tables re-parsed from PDF; computed value 0.20 & none \\
 \hdashline
 Inspur unit error → designation ATT −0.73 & −0.09, n.s. & designation conclusion reversed \\
 \hdashline
@@ -577,11 +569,13 @@ ASCM, specification-curve and annual-SDID values from the 7 October battery & on
 Trade-ladder details (server rank, allied p-values, sensitivity range) and HS8 shape-test definitions & rank 11; four of five baskets; 0.10--0.31; line-level means, p = 0.51/0.63/0.94 & none \\
 \hdashline
 Netherlands--Japan last-train DiD not reproducible; ZTE quarter stated as deviation from trend; Japanese fiscal-year points plotted at fiscal-year start & monthly customs values (121 → 708 → 1,302 m\$; 365 → 642); year-on-year −58\%; fiscal mid-year & none \\
+\hdashline
+Fifth round (26 October 2026, after an independent reproduction): annual aggregate undefined in code; §3.5 memory revenues in hundred-million yuan; §4.2 NAURA gaps from an earlier run; two figure references & aggregate = log of summed USD revenue, 2019--2025 (sdid2.py); 14.1 → 56.7 and 9.1 → 61.8 bn; +0.52/+0.64/+0.94; references corrected & none \\
 \bottomrule
 \end{tabular}\end{table}
 
 
-\textbf{Table F2. Retired values (never to be used)}: CXMT shareholder shares 26.99/15.24/31.72 percent and YMTC shares 28.56/12.88/12.24/9.96 percent (earlier capital tables; replaced by the pre-IPO registers of the 2026 prospectuses); NAURA +306/+215\% (simple SDID); base-station −41\% single value; allied semiconductor −29\% (basket with photovoltaics); pre-trend multipliers 4.2/12.4/8.1/361 (old basket); CXMT press loss figures; Gartner-based joint p ≈ 0.018; CS ATT −0.73; government-subsidy ratios of 8 Oct 2026 (table misidentification); memory-maker revenues 187/452/632 and 91/242/618 ``bn'' (hundred-million yuan misread as billions); ASCM 0.73/0.78/0.62/0.68 and own-trend 0.23/0.16 (7 October battery); specification-curve +122\%/98\% and +11\%/75\%; annual-SDID aggregate +56\% (2/27) and ``27 donors''; dynamic NAURA +0.40/+0.58/+0.91; Netherlands--Japan last-train DiD +49\% (p = 0.18) and Dutch pre-announcement average 200 m\(; HS8 shape p = 0.63/0.30; exposure p = 0.31; Japan compliance DiD −8 pp; China-reported server rank 13; ZTE −59% versus trend. Clean re-run of 9 October 2026 superseded earlier values for the Huawei group effect (−39% → −42%, 29 donors), the ZTE segment effects (−52%/+2% → −47%/+1%), the quarterly SDID (percent values → log points, all rank 1/16), the compliance level statistic (+4.6 → +3.2 pp), the Huawei dollar figures (replaced by CNY from the annual reports), the etch origin shares (29→5 / 12→31 → 43→5 / 13→43), the lithography unit values (17→47 → 20→37→51 M
+\textbf{Table F2. Retired values (never to be used)}: YMTC NAND revenue ``141 → 567 bn'' and CXMT ``91 → 618 bn'' (hundred-million yuan); NAURA dynamic gaps +0.40/+0.58/+0.91; CXMT shareholder shares 26.99/15.24/31.72 percent and YMTC shares 28.56/12.88/12.24/9.96 percent (earlier capital tables; replaced by the pre-IPO registers of the 2026 prospectuses); NAURA +306/+215\% (simple SDID); base-station −41\% single value; allied semiconductor −29\% (basket with photovoltaics); pre-trend multipliers 4.2/12.4/8.1/361 (old basket); CXMT press loss figures; Gartner-based joint p ≈ 0.018; CS ATT −0.73; government-subsidy ratios of 8 Oct 2026 (table misidentification); memory-maker revenues 187/452/632 and 91/242/618 ``bn'' (hundred-million yuan misread as billions); ASCM 0.73/0.78/0.62/0.68 and own-trend 0.23/0.16 (7 October battery); specification-curve +122\%/98\% and +11\%/75\%; annual-SDID aggregate +56\% (2/27) and ``27 donors''; dynamic NAURA +0.40/+0.58/+0.91; Netherlands--Japan last-train DiD +49\% (p = 0.18) and Dutch pre-announcement average 200 m\(; HS8 shape p = 0.63/0.30; exposure p = 0.31; Japan compliance DiD −8 pp; China-reported server rank 13; ZTE −59% versus trend. Clean re-run of 9 October 2026 superseded earlier values for the Huawei group effect (−39% → −42%, 29 donors), the ZTE segment effects (−52%/+2% → −47%/+1%), the quarterly SDID (percent values → log points, all rank 1/16), the compliance level statistic (+4.6 → +3.2 pp), the Huawei dollar figures (replaced by CNY from the annual reports), the etch origin shares (29→5 / 12→31 → 43→5 / 13→43), the lithography unit values (17→47 → 20→37→51 M
 \)) and the 2026 Dutch-origin change (−32\% annualized → −5\% January--August). The re-run of 25 October 2026 superseded the remaining battery values (Appendix B) and the memory-maker figures (Appendix E). The rule-versus-tariff appendix was withdrawn pending re-verification of a sign conflict between two archived runs.
 
 
