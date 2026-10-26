@@ -49,3 +49,20 @@ def sdid(Y, tr, ctrl):
     lam = rl.x[1:]
     tau = (yt[post].mean() - lam @ yt[pre].values) - w @ (Cq.mean(axis=1) - Cp @ lam)
     return tau, dict(zip(C.index, w)), dict(zip(pre, lam)), list(C.index), pre, post
+
+
+def add_equipment_units(Y):
+    """Add ACM Research (SEC EDGAR annual revenue, USD) and the three-firm aggregate EQUIP3 = log(NAURA equipment + AMEC + ACMR),
+    all in USD at annual average rates, to the annual panel returned by build(True)."""
+    c = pd.read_csv(_os.path.join(PROC, 'EDGAR_controls_revenue_frames_19firms.csv')); a = c[c.freq == 'A'].pivot_table(index='firm', columns='year', values='revenue', aggfunc='first')
+    acmr = a.loc['ACMR'].reindex(YRS); Y.loc['TR:ACMR'] = np.log(acmr.where(acmr > 0)).values
+    Y.loc['TR:EQUIP3'] = np.log(np.exp(Y.loc[['TR:NAURA_equip', 'TR:AMEC', 'TR:ACMR']]).sum(min_count=3)).values
+    return Y
+
+if __name__ == '__main__':
+    # Annual SDID, 26 foreign donors with complete 2016-2025 data (14 SEC/EU incl. ASML, 8 Japanese, 4 Korean); pre 2017-22, post 2023-25; rank among 27 placebo paths.
+    Y = add_equipment_units(build(True)); donors = [i for i in Y.index if not i.startswith('TR:') and Y.loc[i, PRE + POST].notna().all()]
+    print(f"annual SDID: {len(donors)} donors, pre {PRE[0]}-{PRE[-1]}, post {POST[0]}-{POST[-1]}")
+    for tr in ['TR:NAURA_equip', 'TR:AMEC', 'TR:ACMR', 'TR:EQUIP3', 'TR:SMIC', 'TR:HuaHong']:
+        t = sdid(Y, tr, donors)[0]; pl = [sdid(Y, j, [d for d in donors if d != j])[0] for j in donors]
+        print(f"  {tr[3:]:12} tau={t:+.2f} ({100*(np.exp(t)-1):+.0f}%)  rank {1+sum(p >= t for p in pl)}/{len(pl)+1}")
