@@ -35,7 +35,7 @@ def _narrow(m):
     if 'Crosswalk' in blk: blk = blk.replace('\\real{0.5000}', '\\real{0.26}', 1).replace('\\real{0.5000}', '\\real{0.74}', 1)
     if 'Trade-flow tests' in blk: blk = blk.replace('\\begin{table}[htbp]', '\\begin{table}[H]', 1)
     if 'Shareholders and finances' in blk: blk = blk.replace('\\begin{table}[htbp]', '\\begin{table}[H]', 1)
-    if 'Corrections (four audit rounds)' in blk: blk = blk.replace('\\begin{table}[htbp]', '\\begin{table}[H]\\scriptsize', 1).replace('\\real{0.3333}', '\\real{0.30}', 1).replace('\\real{0.3333}', '\\real{0.46}', 1).replace('\\real{0.3333}', '\\real{0.24}', 1)
+    if 'Corrections (four audit rounds)' in blk: blk = blk.replace('\\begin{table}[htbp]', '\\begin{table}[htbp]\\scriptsize', 1).replace('\\real{0.3333}', '\\real{0.30}', 1).replace('\\real{0.3333}', '\\real{0.53}', 1).replace('\\real{0.3333}', '\\real{0.17}', 1)
     return blk
 tex = _re.sub(r'\\begin\{table\}.*?\\end\{table\}', _narrow, tex, flags=_re.S)
 tex = tex.replace('ASCM vs own trend', 'ASCM\\newline vs own trend').replace('Annual SDID, 27 donors', 'Annual SDID\\newline (27 donors)').replace('ASCM vs peers', 'ASCM\\newline vs peers').replace('SDID vs peers', 'SDID\\newline vs peers')
